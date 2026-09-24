@@ -1,5 +1,5 @@
 Flow report for DeMultiplexer
-Wed Sep 23 21:16:17 2026
+Thu Sep 24 12:12:08 2026
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Wed Sep 23 21:16:15 2026           ;
+; Flow Status                        ; Successful - Thu Sep 24 12:12:05 2026           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; DeMultiplexer                                   ;
 ; Top-level Entity Name              ; DeMultiplexer                                   ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 09/23/2026 21:16:02 ;
+; Start date & time ; 09/24/2026 12:11:06 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; DeMultiplexer       ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+---------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 215766714255917.179021256206708 ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 215766714255917.179026626615892 ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                               ; --            ; --          ; --         ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                            ; --            ; --          ; --         ;
@@ -91,11 +91,11 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:00     ; 1.0                     ; 4571 MB             ; 00:00:01                           ;
-; Fitter                    ; 00:00:08     ; 1.0                     ; 5067 MB             ; 00:00:08                           ;
-; Assembler                 ; 00:00:03     ; 1.0                     ; 4556 MB             ; 00:00:03                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4662 MB             ; 00:00:01                           ;
-; Total                     ; 00:00:13     ; --                      ; --                  ; 00:00:13                           ;
+; Analysis & Synthesis      ; 00:00:06     ; 1.0                     ; 4571 MB             ; 00:00:02                           ;
+; Fitter                    ; 00:00:45     ; 1.0                     ; 5066 MB             ; 00:00:38                           ;
+; Assembler                 ; 00:00:07     ; 1.0                     ; 4555 MB             ; 00:00:06                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4648 MB             ; 00:00:02                           ;
+; Total                     ; 00:01:00     ; --                      ; --                  ; 00:00:48                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
