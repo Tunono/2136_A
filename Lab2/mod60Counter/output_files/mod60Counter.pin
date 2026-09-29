@@ -63,7 +63,7 @@
  -- Pin directions (input, output or bidir) are based on device operating in user mode.
  ---------------------------------------------------------------------------------
 
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 CHIP  "mod60Counter"  ASSIGNED TO AN: EP4CE6E22C6
 
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
@@ -133,14 +133,14 @@ VCCIO4                       : 62        : power  :                   : 2.5V    
 GND                          : 63        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 64        :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 65        :        :                   :         : 4         :                
-Q2                           : 66        : output : 2.5 V             :         : 4         : N              
-BQ0                          : 67        : output : 2.5 V             :         : 4         : N              
-RO                           : 68        : output : 2.5 V             :         : 4         : N              
-Q1                           : 69        : output : 2.5 V             :         : 4         : N              
-BQ3                          : 70        : output : 2.5 V             :         : 4         : N              
-BQ1                          : 71        : output : 2.5 V             :         : 4         : N              
-Q0                           : 72        : output : 2.5 V             :         : 4         : N              
-BQ2                          : 73        : output : 2.5 V             :         : 5         : N              
+BQ2                          : 66        : output : 2.5 V             :         : 4         : N              
+Q1                           : 67        : output : 2.5 V             :         : 4         : N              
+Q0                           : 68        : output : 2.5 V             :         : 4         : N              
+RO                           : 69        : output : 2.5 V             :         : 4         : N              
+BQ1                          : 70        : output : 2.5 V             :         : 4         : N              
+BQ0                          : 71        : output : 2.5 V             :         : 4         : N              
+BQ3                          : 72        : output : 2.5 V             :         : 4         : N              
+Q2                           : 73        : output : 2.5 V             :         : 5         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : 74        :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 75        :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 76        :        :                   :         : 5         :                

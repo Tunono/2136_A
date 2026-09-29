@@ -55,7 +55,7 @@ applicable agreement for further details.
 	(input)
 	(rect -24 320 144 336)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "RESET" (rect 5 0 41 12)(font "Arial" ))
+	(text "RESET" (rect 5 0 40 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -585,10 +585,6 @@ applicable agreement for further details.
 	(pt 688 328)
 )
 (connector
-	(pt 688 336)
-	(pt 480 336)
-)
-(connector
 	(pt 688 344)
 	(pt 288 344)
 )
@@ -653,10 +649,6 @@ applicable agreement for further details.
 	(pt 680 328)
 )
 (connector
-	(pt 480 256)
-	(pt 480 336)
-)
-(connector
 	(pt 288 248)
 	(pt 288 272)
 )
@@ -679,10 +671,6 @@ applicable agreement for further details.
 (connector
 	(pt 296 208)
 	(pt 496 208)
-)
-(connector
-	(pt 144 208)
-	(pt 184 208)
 )
 (connector
 	(pt 184 208)
@@ -752,6 +740,22 @@ applicable agreement for further details.
 	(pt 248 328)
 	(pt 440 328)
 )
+(connector
+	(pt 688 336)
+	(pt 168 336)
+)
+(connector
+	(pt 168 336)
+	(pt 168 208)
+)
+(connector
+	(pt 144 208)
+	(pt 168 208)
+)
+(connector
+	(pt 168 208)
+	(pt 184 208)
+)
 (junction (pt 184 248))
 (junction (pt 384 264))
 (junction (pt 296 208))
@@ -759,7 +763,6 @@ applicable agreement for further details.
 (junction (pt 496 240))
 (junction (pt 488 248))
 (junction (pt 680 248))
-(junction (pt 480 256))
 (junction (pt 288 272))
 (junction (pt 208 312))
 (junction (pt 400 312))
@@ -769,3 +772,4 @@ applicable agreement for further details.
 (junction (pt 680 200))
 (junction (pt 440 328))
 (junction (pt 248 328))
+(junction (pt 168 208))
