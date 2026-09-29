@@ -46,6 +46,7 @@ C => inst~1.IN0
 C => inst~0.IN1
 C => inst7.IN0
 C => inst5.IN1
+C => inst6.IN1
 clk => inst.CLK
 clk => inst1.CLK
 clk => inst2.CLK
