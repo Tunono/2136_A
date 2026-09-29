@@ -1,0 +1,56 @@
+|mod60Counter
+BQ0 <= BCD_counter:inst1.BQ0
+clk => BCD_counter:inst1.clk
+clk => mod6_counter:inst2.clk
+RESET => BCD_counter:inst1.RESET
+RESET => mod6_counter:inst2.RESET
+BQ1 <= BCD_counter:inst1.BQ1
+BQ2 <= BCD_counter:inst1.BQ2
+BQ3 <= BCD_counter:inst1.BQ3
+Q0 <= mod6_counter:inst2.Q0
+Q1 <= mod6_counter:inst2.Q1
+Q2 <= mod6_counter:inst2.Q2
+RO <= mod6_counter:inst2.RO
+
+
+|mod60Counter|BCD_counter:inst1
+BRO <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+C => inst9.IN0
+C => inst2.IN0
+C => inst2.IN1
+C => inst.IN0
+C => inst11.IN0
+C => inst6.IN0
+C => inst8.IN0
+RESET => inst2.ACLR
+RESET => inst5.ACLR
+RESET => inst3.ACLR
+RESET => inst4.ACLR
+clk => inst2.CLK
+clk => inst3.CLK
+clk => inst4.CLK
+clk => inst5.CLK
+BQ0 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+BQ1 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+BQ2 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+BQ3 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod60Counter|mod6_counter:inst2
+RO <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RESET => inst2.ACLR
+RESET => inst.ACLR
+RESET => inst1.ACLR
+C => inst4.IN0
+C => inst.IN0
+C => inst.IN1
+C => inst7.IN0
+C => inst5.IN1
+clk => inst.CLK
+clk => inst1.CLK
+clk => inst2.CLK
+Q0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Q1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
