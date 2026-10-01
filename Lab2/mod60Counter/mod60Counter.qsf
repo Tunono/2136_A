@@ -37,7 +37,7 @@
 
 
 set_global_assignment -name FAMILY "Cyclone IV E"
-set_global_assignment -name DEVICE AUTO
+set_global_assignment -name DEVICE EP4CE115F29C7
 set_global_assignment -name TOP_LEVEL_ENTITY mod60Counter
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:46:43  SEPTEMBER 29, 2026"
@@ -52,5 +52,18 @@ set_global_assignment -name SIMULATION_MODE FUNCTIONAL
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/CEG/2136_A/Lab2/mod60Counter/Waveform.vwf"
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_E21 -to BQ0
+set_location_assignment PIN_E22 -to BQ1
+set_location_assignment PIN_E25 -to BQ2
+set_location_assignment PIN_E24 -to BQ3
+set_location_assignment PIN_M23 -to clk
+set_location_assignment PIN_G19 -to Q0
+set_location_assignment PIN_F19 -to Q1
+set_location_assignment PIN_E19 -to Q2
+set_location_assignment PIN_AB28 -to RESET
+set_location_assignment PIN_G16 -to RO
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
