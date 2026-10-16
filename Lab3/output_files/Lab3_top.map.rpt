@@ -1,6 +1,6 @@
 Analysis & Synthesis report for Lab3_top
-Thu Oct 15 14:20:14 2026
-Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Thu Oct 15 20:19:49 2026
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -10,7 +10,19 @@ Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |Lab3_top|input_generator_high_freq:inst|pr_state
+  9. Registers Removed During Synthesis
+ 10. Removed Registers Triggering Further Register Optimizations
+ 11. General Register Statistics
+ 12. Parameter Settings for User Entity Instance: logiccircuit4bit:inst15|logiccircuit1bit:inst|74151:inst
+ 13. Parameter Settings for User Entity Instance: logiccircuit4bit:inst15|logiccircuit1bit:inst1|74151:inst
+ 14. Parameter Settings for User Entity Instance: logiccircuit4bit:inst15|logiccircuit1bit:inst2|74151:inst
+ 15. Parameter Settings for User Entity Instance: logiccircuit4bit:inst15|logiccircuit1bit:inst3|74151:inst
+ 16. Elapsed Time Per Partition
+ 17. Analysis & Synthesis Messages
 
 
 
@@ -36,20 +48,20 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Thu Oct 15 14:20:14 2026               ;
-; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Analysis & Synthesis Status        ; Successful - Thu Oct 15 20:19:49 2026           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Lab3_top                                        ;
 ; Top-level Entity Name              ; Lab3_top                                        ;
 ; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; N/A until Partition Merge                       ;
-;     Total combinational functions  ; N/A until Partition Merge                       ;
-;     Dedicated logic registers      ; N/A until Partition Merge                       ;
-; Total registers                    ; N/A until Partition Merge                       ;
-; Total pins                         ; N/A until Partition Merge                       ;
-; Total virtual pins                 ; N/A until Partition Merge                       ;
-; Total memory bits                  ; N/A until Partition Merge                       ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
-; Total PLLs                         ; N/A until Partition Merge                       ;
+; Total logic elements               ; 32                                              ;
+;     Total combinational functions  ; 16                                              ;
+;     Dedicated logic registers      ; 22                                              ;
+; Total registers                    ; 22                                              ;
+; Total pins                         ; 22                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
 +------------------------------------+-------------------------------------------------+
 
 
@@ -146,18 +158,227 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 6      ;
+; Number detected on machine ; 16     ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                             ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                   ; Library ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------+---------+
+; fulladder1bit.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/CEG/2136_A/Lab3/fulladder1bit.bdf                           ;         ;
+; arithcircuit1bit.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/CEG/2136_A/Lab3/arithcircuit1bit.bdf                        ;         ;
+; arithcircuit4bit.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/CEG/2136_A/Lab3/arithcircuit4bit.bdf                        ;         ;
+; logiccircuit1bit.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/CEG/2136_A/Lab3/logiccircuit1bit.bdf                        ;         ;
+; logiccircuit4bit.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/CEG/2136_A/Lab3/logiccircuit4bit.bdf                        ;         ;
+; register4bit.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/CEG/2136_A/Lab3/register4bit.bdf                            ;         ;
+; state4bit.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/CEG/2136_A/Lab3/state4bit.bdf                               ;         ;
+; Lab3_top.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/CEG/2136_A/Lab3/Lab3_top.bdf                                ;         ;
+; input_generator_high_freq.vhd    ; yes             ; Auto-Found VHDL File               ; C:/CEG/2136_A/Lab3/input_generator_high_freq.vhd               ;         ;
+; 74153.bdf                        ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/others/maxplus2/74153.bdf  ;         ;
+; 74257.bdf                        ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/others/maxplus2/74257.bdf  ;         ;
+; 74151.tdf                        ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/others/maxplus2/74151.tdf  ;         ;
+; aglobal.inc                      ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal.inc  ;         ;
+; f74151.bdf                       ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/others/maxplus2/f74151.bdf ;         ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------+---------+
+
+
++-------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                         ;
++---------------------------------------------+---------------------------------------+
+; Resource                                    ; Usage                                 ;
++---------------------------------------------+---------------------------------------+
+; Estimated Total logic elements              ; 32                                    ;
+;                                             ;                                       ;
+; Total combinational functions               ; 16                                    ;
+; Logic element usage by number of LUT inputs ;                                       ;
+;     -- 4 input functions                    ; 7                                     ;
+;     -- 3 input functions                    ; 2                                     ;
+;     -- <=2 input functions                  ; 7                                     ;
+;                                             ;                                       ;
+; Logic elements by mode                      ;                                       ;
+;     -- normal mode                          ; 16                                    ;
+;     -- arithmetic mode                      ; 0                                     ;
+;                                             ;                                       ;
+; Total registers                             ; 22                                    ;
+;     -- Dedicated logic registers            ; 22                                    ;
+;     -- I/O registers                        ; 0                                     ;
+;                                             ;                                       ;
+; I/O pins                                    ; 22                                    ;
+; Embedded Multiplier 9-bit elements          ; 0                                     ;
+; Maximum fan-out node                        ; input_generator_high_freq:inst|my_clk ;
+; Maximum fan-out                             ; 17                                    ;
+; Total fan-out                               ; 117                                   ;
+; Average fan-out                             ; 1.43                                  ;
++---------------------------------------------+---------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                       ;
++-------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------+--------------+
+; Compilation Hierarchy Node          ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                      ; Library Name ;
++-------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------+--------------+
+; |Lab3_top                           ; 16 (0)            ; 22 (0)       ; 0           ; 0            ; 0       ; 0         ; 22   ; 0            ; |Lab3_top                                ; work         ;
+;    |input_generator_high_freq:inst| ; 16 (16)           ; 20 (20)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab3_top|input_generator_high_freq:inst ; work         ;
+;    |register4bit:inst13|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab3_top|register4bit:inst13            ; work         ;
+;    |register4bit:inst6|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Lab3_top|register4bit:inst6             ; work         ;
++-------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |Lab3_top|input_generator_high_freq:inst|pr_state                                                                                                                                                                                                                                                      ;
++------------------+------------------+------------------+------------------+------------------+------------------+------------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+
+; Name             ; pr_state.state15 ; pr_state.state14 ; pr_state.state13 ; pr_state.state12 ; pr_state.state11 ; pr_state.state10 ; pr_state.state9 ; pr_state.state8 ; pr_state.state7 ; pr_state.state6 ; pr_state.state5 ; pr_state.state4 ; pr_state.state3 ; pr_state.state2 ; pr_state.state1 ; pr_state.state0 ;
++------------------+------------------+------------------+------------------+------------------+------------------+------------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+
+; pr_state.state0  ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ;
+; pr_state.state1  ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 1               ;
+; pr_state.state2  ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 1               ;
+; pr_state.state3  ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 1               ;
+; pr_state.state4  ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 1               ;
+; pr_state.state5  ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0               ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 1               ;
+; pr_state.state6  ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0               ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ;
+; pr_state.state7  ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0               ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ;
+; pr_state.state8  ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0               ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ;
+; pr_state.state9  ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ;
+; pr_state.state10 ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ;
+; pr_state.state11 ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ;
+; pr_state.state12 ; 0                ; 0                ; 0                ; 1                ; 0                ; 0                ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ;
+; pr_state.state13 ; 0                ; 0                ; 1                ; 0                ; 0                ; 0                ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ;
+; pr_state.state14 ; 0                ; 1                ; 0                ; 0                ; 0                ; 0                ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ;
+; pr_state.state15 ; 1                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 0               ; 1               ;
++------------------+------------------+------------------+------------------+------------------+------------------+------------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+-----------------+
+
+
++---------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                              ;
++----------------------------------------+----------------------------------------+
+; Register name                          ; Reason for Removal                     ;
++----------------------------------------+----------------------------------------+
+; register4bit:inst7|inst1               ; Stuck at GND due to stuck port data_in ;
+; register4bit:inst8|inst1               ; Lost fanout                            ;
+; register4bit:inst8|inst                ; Lost fanout                            ;
+; register4bit:inst7|inst2               ; Lost fanout                            ;
+; register4bit:inst8|inst2               ; Lost fanout                            ;
+; register4bit:inst7|inst3               ; Lost fanout                            ;
+; register4bit:inst6|inst                ; Lost fanout                            ;
+; register4bit:inst6|inst2               ; Lost fanout                            ;
+; register4bit:inst8|inst3               ; Lost fanout                            ;
+; register4bit:inst6|inst3               ; Stuck at GND due to stuck port data_in ;
+; register4bit:inst13|inst3              ; Stuck at GND due to stuck port data_in ;
+; register4bit:inst12|inst1              ; Stuck at GND due to stuck port data_in ;
+; register4bit:inst12|inst               ; Stuck at GND due to stuck port data_in ;
+; register4bit:inst12|inst2              ; Stuck at GND due to stuck port data_in ;
+; register4bit:inst12|inst3              ; Stuck at GND due to stuck port data_in ;
+; register4bit:inst13|inst1              ; Stuck at GND due to stuck port data_in ;
+; register4bit:inst13|inst               ; Stuck at GND due to stuck port data_in ;
+; register4bit:inst7|inst                ; Merged with register4bit:inst6|inst1   ;
+; Total Number of Removed Registers = 18 ;                                        ;
++----------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                ;
++--------------------------+---------------------------+-----------------------------------------------------+
+; Register name            ; Reason for Removal        ; Registers Removed due to This Register              ;
++--------------------------+---------------------------+-----------------------------------------------------+
+; register4bit:inst7|inst1 ; Stuck at GND              ; register4bit:inst6|inst, register4bit:inst6|inst2   ;
+;                          ; due to stuck port data_in ;                                                     ;
+; register4bit:inst6|inst3 ; Stuck at GND              ; register4bit:inst12|inst3, register4bit:inst13|inst ;
+;                          ; due to stuck port data_in ;                                                     ;
++--------------------------+---------------------------+-----------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 22    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 2     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: logiccircuit4bit:inst15|logiccircuit1bit:inst|74151:inst ;
++------------------------+--------------+---------------------------------------------------------------+
+; Parameter Name         ; Value        ; Type                                                          ;
++------------------------+--------------+---------------------------------------------------------------+
+; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                                                       ;
+; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                                                    ;
+; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                                                  ;
+; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                                                  ;
+; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE                                                ;
++------------------------+--------------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: logiccircuit4bit:inst15|logiccircuit1bit:inst1|74151:inst ;
++------------------------+--------------+----------------------------------------------------------------+
+; Parameter Name         ; Value        ; Type                                                           ;
++------------------------+--------------+----------------------------------------------------------------+
+; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                                                        ;
+; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                                                     ;
+; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                                                   ;
+; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                                                   ;
+; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE                                                 ;
++------------------------+--------------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: logiccircuit4bit:inst15|logiccircuit1bit:inst2|74151:inst ;
++------------------------+--------------+----------------------------------------------------------------+
+; Parameter Name         ; Value        ; Type                                                           ;
++------------------------+--------------+----------------------------------------------------------------+
+; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                                                        ;
+; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                                                     ;
+; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                                                   ;
+; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                                                   ;
+; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE                                                 ;
++------------------------+--------------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: logiccircuit4bit:inst15|logiccircuit1bit:inst3|74151:inst ;
++------------------------+--------------+----------------------------------------------------------------+
+; Parameter Name         ; Value        ; Type                                                           ;
++------------------------+--------------+----------------------------------------------------------------+
+; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                                                        ;
+; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                                                     ;
+; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                                                   ;
+; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                                                   ;
+; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE                                                 ;
++------------------------+--------------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
 
 
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 32-bit Analysis & Synthesis
+Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Oct 15 14:20:11 2026
+    Info: Processing started: Thu Oct 15 20:19:45 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab3 -c Lab3_top
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file fulladder1bit.bdf
@@ -251,15 +472,101 @@ Info (12130): Elaborated megafunction instantiation "arithcircuit4bit:inst9|arit
 Info (12128): Elaborating entity "74257" for hierarchy "74257:inst14"
 Info (12130): Elaborated megafunction instantiation "74257:inst14"
 Info (12128): Elaborating entity "logiccircuit4bit" for hierarchy "logiccircuit4bit:inst15"
-Error (275021): Illegal wire or bus name "Ai+1" of type port 
-Error (275021): Illegal wire or bus name "Ai+1" of type port 
-Error (275021): Illegal wire or bus name "Ai+1" of type port 
-Error (275021): Illegal wire or bus name "Ai+1" of type port 
-Error (12152): Can't elaborate user hierarchy "logiccircuit4bit:inst15"
-Error: Quartus II 32-bit Analysis & Synthesis was unsuccessful. 5 errors, 33 warnings
-    Error: Peak virtual memory: 398 megabytes
-    Error: Processing ended: Thu Oct 15 14:20:15 2026
-    Error: Elapsed time: 00:00:04
-    Error: Total CPU time (on all processors): 00:00:03
+Warning (275080): Converted elements in bus name "A" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "A[0]" to "A0"
+    Warning (275081): Converted element name(s) from "A[1]" to "A1"
+    Warning (275081): Converted element name(s) from "A[2]" to "A2"
+    Warning (275081): Converted element name(s) from "A[3]" to "A3"
+    Warning (275081): Converted element name(s) from "A[3]" to "A3"
+    Warning (275081): Converted element name(s) from "A[3]" to "A3"
+    Warning (275081): Converted element name(s) from "A[2]" to "A2"
+    Warning (275081): Converted element name(s) from "A[2]" to "A2"
+    Warning (275081): Converted element name(s) from "A[1]" to "A1"
+    Warning (275081): Converted element name(s) from "A[3]" to "A3"
+    Warning (275081): Converted element name(s) from "A[1]" to "A1"
+    Warning (275081): Converted element name(s) from "A[0]" to "A0"
+    Warning (275081): Converted element name(s) from "A[2]" to "A2"
+    Warning (275081): Converted element name(s) from "A[0]" to "A0"
+    Warning (275081): Converted element name(s) from "A[1]" to "A1"
+Warning (275080): Converted elements in bus name "B" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "B[0]" to "B0"
+    Warning (275081): Converted element name(s) from "B[1]" to "B1"
+    Warning (275081): Converted element name(s) from "B[2]" to "B2"
+    Warning (275081): Converted element name(s) from "B[3]" to "B3"
+    Warning (275081): Converted element name(s) from "B[3]" to "B3"
+    Warning (275081): Converted element name(s) from "B[2]" to "B2"
+    Warning (275081): Converted element name(s) from "B[1]" to "B1"
+    Warning (275081): Converted element name(s) from "B[0]" to "B0"
+Warning (275080): Converted elements in bus name "S" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "S[0]" to "S0"
+    Warning (275081): Converted element name(s) from "S[1]" to "S1"
+    Warning (275081): Converted element name(s) from "S[2]" to "S2"
+    Warning (275081): Converted element name(s) from "S[0]" to "S0"
+    Warning (275081): Converted element name(s) from "S[1]" to "S1"
+    Warning (275081): Converted element name(s) from "S[2]" to "S2"
+    Warning (275081): Converted element name(s) from "S[0]" to "S0"
+    Warning (275081): Converted element name(s) from "S[1]" to "S1"
+    Warning (275081): Converted element name(s) from "S[2]" to "S2"
+    Warning (275081): Converted element name(s) from "S[0]" to "S0"
+    Warning (275081): Converted element name(s) from "S[1]" to "S1"
+    Warning (275081): Converted element name(s) from "S[2]" to "S2"
+    Warning (275081): Converted element name(s) from "S[0]" to "S0"
+    Warning (275081): Converted element name(s) from "S[1]" to "S1"
+    Warning (275081): Converted element name(s) from "S[2]" to "S2"
+Info (12128): Elaborating entity "logiccircuit1bit" for hierarchy "logiccircuit4bit:inst15|logiccircuit1bit:inst"
+Info (12128): Elaborating entity "74151" for hierarchy "logiccircuit4bit:inst15|logiccircuit1bit:inst|74151:inst"
+Info (12130): Elaborated megafunction instantiation "logiccircuit4bit:inst15|logiccircuit1bit:inst|74151:inst"
+Info (12128): Elaborating entity "f74151" for hierarchy "logiccircuit4bit:inst15|logiccircuit1bit:inst|74151:inst|f74151:sub"
+Info (12131): Elaborated megafunction instantiation "logiccircuit4bit:inst15|logiccircuit1bit:inst|74151:inst|f74151:sub", which is child of megafunction instantiation "logiccircuit4bit:inst15|logiccircuit1bit:inst|74151:inst"
+Warning (14026): LATCH primitive "input_generator_high_freq:inst|nx_state.state3_780" is permanently enabled
+Warning (14026): LATCH primitive "input_generator_high_freq:inst|nx_state.state4_768" is permanently enabled
+Warning (14026): LATCH primitive "input_generator_high_freq:inst|nx_state.state5_756" is permanently enabled
+Warning (14026): LATCH primitive "input_generator_high_freq:inst|nx_state.state6_744" is permanently enabled
+Warning (14026): LATCH primitive "input_generator_high_freq:inst|nx_state.state7_732" is permanently enabled
+Warning (14026): LATCH primitive "input_generator_high_freq:inst|nx_state.state8_720" is permanently enabled
+Warning (14026): LATCH primitive "input_generator_high_freq:inst|nx_state.state9_708" is permanently enabled
+Warning (14026): LATCH primitive "input_generator_high_freq:inst|nx_state.state10_696" is permanently enabled
+Warning (14026): LATCH primitive "input_generator_high_freq:inst|nx_state.state11_684" is permanently enabled
+Warning (14026): LATCH primitive "input_generator_high_freq:inst|nx_state.state12_672" is permanently enabled
+Warning (14026): LATCH primitive "input_generator_high_freq:inst|nx_state.state13_660" is permanently enabled
+Warning (14026): LATCH primitive "input_generator_high_freq:inst|nx_state.state14_648" is permanently enabled
+Warning (14026): LATCH primitive "input_generator_high_freq:inst|nx_state.state15_636" is permanently enabled
+Warning (14026): LATCH primitive "input_generator_high_freq:inst|nx_state.state0_816" is permanently enabled
+Warning (14026): LATCH primitive "input_generator_high_freq:inst|nx_state.state1_804" is permanently enabled
+Warning (14026): LATCH primitive "input_generator_high_freq:inst|nx_state.state2_792" is permanently enabled
+Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
+    Warning (13049): Converted tri-state buffer "74257:inst14|29" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "74257:inst14|26" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "74257:inst14|22" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "74257:inst14|20" feeding internal logic into a wire
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "A0" is stuck at GND
+    Warning (13410): Pin "A1" is stuck at GND
+    Warning (13410): Pin "A2" is stuck at VCC
+    Warning (13410): Pin "A3" is stuck at VCC
+    Warning (13410): Pin "B0" is stuck at VCC
+    Warning (13410): Pin "B1" is stuck at VCC
+    Warning (13410): Pin "B2" is stuck at VCC
+    Warning (13410): Pin "B3" is stuck at GND
+    Warning (13410): Pin "C" is stuck at GND
+    Warning (13410): Pin "Z" is stuck at GND
+    Warning (13410): Pin "N" is stuck at GND
+    Warning (13410): Pin "C0" is stuck at GND
+    Warning (13410): Pin "C1" is stuck at GND
+    Warning (13410): Pin "C2" is stuck at GND
+    Warning (13410): Pin "C3" is stuck at GND
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 8 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 54 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 20 output pins
+    Info (21061): Implemented 32 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 111 warnings
+    Info: Peak virtual memory: 385 megabytes
+    Info: Processing ended: Thu Oct 15 20:19:49 2026
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:00
 
 
