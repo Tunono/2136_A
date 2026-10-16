@@ -103,7 +103,7 @@ applicable agreement for further details.
 	(input)
 	(rect 440 488 608 504)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "Ai_1" (rect 5 0 27 12)(font "Arial" ))
+	(text "Ai_1" (rect 5 0 26 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -119,7 +119,7 @@ applicable agreement for further details.
 	(input)
 	(rect 440 504 608 520)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "AiP1" (rect 5 0 28 12)(font "Arial" ))
+	(text "AiP1" (rect 5 0 27 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -454,22 +454,6 @@ applicable agreement for further details.
 	(pt 648 440)
 )
 (connector
-	(pt 648 440)
-	(pt 648 328)
-)
-(connector
-	(pt 664 328)
-	(pt 648 328)
-)
-(connector
-	(pt 648 328)
-	(pt 544 328)
-)
-(connector
-	(pt 664 312)
-	(pt 584 312)
-)
-(connector
 	(pt 664 264)
 	(pt 656 264)
 )
@@ -610,10 +594,6 @@ applicable agreement for further details.
 	(pt 816 344)
 )
 (connector
-	(pt 336 296)
-	(pt 304 296)
-)
-(connector
 	(pt 360 280)
 	(pt 304 280)
 )
@@ -657,10 +637,30 @@ applicable agreement for further details.
 	(pt 632 248)
 	(pt 624 248)
 )
-(junction (pt 648 328))
+(connector
+	(pt 336 296)
+	(pt 304 296)
+)
+(connector
+	(pt 544 328)
+	(pt 664 328)
+)
+(connector
+	(pt 648 312)
+	(pt 648 440)
+)
+(connector
+	(pt 664 312)
+	(pt 648 312)
+)
+(connector
+	(pt 648 312)
+	(pt 584 312)
+)
 (junction (pt 336 312))
 (junction (pt 360 296))
 (junction (pt 360 344))
 (junction (pt 336 360))
 (junction (pt 336 408))
 (junction (pt 360 392))
+(junction (pt 648 312))

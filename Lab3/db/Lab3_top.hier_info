@@ -17,19 +17,19 @@ B0 <= input_generator_high_freq:inst.B0
 B1 <= input_generator_high_freq:inst.B1
 B2 <= input_generator_high_freq:inst.B2
 B3 <= input_generator_high_freq:inst.B3
-C <= register4bit:inst13.Y0
+V <= register4bit:inst13.Y1
 CLRN => register4bit:inst6.CLRN
 CLRN => register4bit:inst7.CLRN
 CLRN => register4bit:inst8.CLRN
 CLRN => register4bit:inst13.CLRN
 CLRN => register4bit:inst12.CLRN
-V <= register4bit:inst13.Y1
 Z <= register4bit:inst13.Y2
 N <= register4bit:inst13.Y3
 C0 <= register4bit:inst12.Y0
 C1 <= register4bit:inst12.Y1
 C2 <= register4bit:inst12.Y2
 C3 <= register4bit:inst12.Y3
+Cy <= register4bit:inst13.Y0
 
 
 |Lab3_top|input_generator_high_freq:inst
@@ -376,7 +376,7 @@ A1 => 33.IN0
 B1 => 2.IN0
 
 
-|Lab3_top|logiccircuit4bit:inst15
+|Lab3_top|logiccircuit4bit:inst1
 CL0 <= logiccircuit1bit:inst.CLi
 S0 => logiccircuit1bit:inst.S0
 S0 => logiccircuit1bit:inst1.S0
@@ -410,7 +410,7 @@ CL3 <= logiccircuit1bit:inst3.CLi
 B3 => logiccircuit1bit:inst3.Bi
 
 
-|Lab3_top|logiccircuit4bit:inst15|logiccircuit1bit:inst
+|Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst
 CLi <= 74151:inst.Y
 S2 => 74151:inst.C
 S1 => 74151:inst.B
@@ -427,7 +427,7 @@ Ai_1 => 74151:inst.D6
 AiP1 => 74151:inst.D7
 
 
-|Lab3_top|logiccircuit4bit:inst15|logiccircuit1bit:inst|74151:inst
+|Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst|74151:inst
 c => f74151:sub.c
 b => f74151:sub.b
 a => f74151:sub.a
@@ -444,7 +444,7 @@ y <= f74151:sub.y
 wn <= f74151:sub.wn
 
 
-|Lab3_top|logiccircuit4bit:inst15|logiccircuit1bit:inst|74151:inst|f74151:sub
+|Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst|74151:inst|f74151:sub
 WN <= 85.DB_MAX_OUTPUT_PORT_TYPE
 D0 => 59.IN0
 A => 19.IN0
@@ -461,7 +461,7 @@ GN => 13.IN0
 y <= 82.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Lab3_top|logiccircuit4bit:inst15|logiccircuit1bit:inst1
+|Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst1
 CLi <= 74151:inst.Y
 S2 => 74151:inst.C
 S1 => 74151:inst.B
@@ -478,7 +478,7 @@ Ai_1 => 74151:inst.D6
 AiP1 => 74151:inst.D7
 
 
-|Lab3_top|logiccircuit4bit:inst15|logiccircuit1bit:inst1|74151:inst
+|Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst1|74151:inst
 c => f74151:sub.c
 b => f74151:sub.b
 a => f74151:sub.a
@@ -495,7 +495,7 @@ y <= f74151:sub.y
 wn <= f74151:sub.wn
 
 
-|Lab3_top|logiccircuit4bit:inst15|logiccircuit1bit:inst1|74151:inst|f74151:sub
+|Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst1|74151:inst|f74151:sub
 WN <= 85.DB_MAX_OUTPUT_PORT_TYPE
 D0 => 59.IN0
 A => 19.IN0
@@ -512,7 +512,7 @@ GN => 13.IN0
 y <= 82.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Lab3_top|logiccircuit4bit:inst15|logiccircuit1bit:inst2
+|Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2
 CLi <= 74151:inst.Y
 S2 => 74151:inst.C
 S1 => 74151:inst.B
@@ -529,7 +529,7 @@ Ai_1 => 74151:inst.D6
 AiP1 => 74151:inst.D7
 
 
-|Lab3_top|logiccircuit4bit:inst15|logiccircuit1bit:inst2|74151:inst
+|Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|74151:inst
 c => f74151:sub.c
 b => f74151:sub.b
 a => f74151:sub.a
@@ -546,7 +546,7 @@ y <= f74151:sub.y
 wn <= f74151:sub.wn
 
 
-|Lab3_top|logiccircuit4bit:inst15|logiccircuit1bit:inst2|74151:inst|f74151:sub
+|Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|74151:inst|f74151:sub
 WN <= 85.DB_MAX_OUTPUT_PORT_TYPE
 D0 => 59.IN0
 A => 19.IN0
@@ -563,7 +563,7 @@ GN => 13.IN0
 y <= 82.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Lab3_top|logiccircuit4bit:inst15|logiccircuit1bit:inst3
+|Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst3
 CLi <= 74151:inst.Y
 S2 => 74151:inst.C
 S1 => 74151:inst.B
@@ -580,7 +580,7 @@ Ai_1 => 74151:inst.D6
 AiP1 => 74151:inst.D7
 
 
-|Lab3_top|logiccircuit4bit:inst15|logiccircuit1bit:inst3|74151:inst
+|Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst3|74151:inst
 c => f74151:sub.c
 b => f74151:sub.b
 a => f74151:sub.a
@@ -597,7 +597,7 @@ y <= f74151:sub.y
 wn <= f74151:sub.wn
 
 
-|Lab3_top|logiccircuit4bit:inst15|logiccircuit1bit:inst3|74151:inst|f74151:sub
+|Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst3|74151:inst|f74151:sub
 WN <= 85.DB_MAX_OUTPUT_PORT_TYPE
 D0 => 59.IN0
 A => 19.IN0

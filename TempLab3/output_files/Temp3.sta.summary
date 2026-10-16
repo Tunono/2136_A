@@ -1,0 +1,77 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -2.107
+TNS   : -11.186
+
+Type  : Slow 1200mV 85C Model Setup 'input_generator_high_freq:inst|my_clk'
+Slack : -0.224
+TNS   : -1.055
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.174
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'input_generator_high_freq:inst|my_clk'
+Slack : 0.443
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -23.560
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'input_generator_high_freq:inst|my_clk'
+Slack : -1.285
+TNS   : -20.560
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -1.820
+TNS   : -8.729
+
+Type  : Slow 1200mV 0C Model Setup 'input_generator_high_freq:inst|my_clk'
+Slack : -0.093
+TNS   : -0.234
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.145
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'input_generator_high_freq:inst|my_clk'
+Slack : 0.409
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -23.560
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'input_generator_high_freq:inst|my_clk'
+Slack : -1.285
+TNS   : -20.560
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -0.810
+TNS   : -3.103
+
+Type  : Fast 1200mV 0C Model Setup 'input_generator_high_freq:inst|my_clk'
+Slack : 0.393
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : -0.175
+TNS   : -0.175
+
+Type  : Fast 1200mV 0C Model Hold 'input_generator_high_freq:inst|my_clk'
+Slack : 0.195
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -20.156
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'input_generator_high_freq:inst|my_clk'
+Slack : -1.000
+TNS   : -16.000
+
+------------------------------------------------------------

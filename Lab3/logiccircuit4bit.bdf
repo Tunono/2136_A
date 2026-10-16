@@ -533,196 +533,6 @@ applicable agreement for further details.
 	)
 )
 (connector
-	(text "S[0]" (rect 416 56 436 68)(font "Arial" ))
-	(pt 416 72)
-	(pt 432 72)
-)
-(connector
-	(text "S[1]" (rect 416 72 436 84)(font "Arial" ))
-	(pt 416 88)
-	(pt 432 88)
-)
-(connector
-	(text "S[2]" (rect 416 88 436 100)(font "Arial" ))
-	(pt 416 104)
-	(pt 432 104)
-)
-(connector
-	(text "A[0]" (rect 424 168 444 180)(font "Arial" ))
-	(pt 424 184)
-	(pt 440 184)
-)
-(connector
-	(text "A[1]" (rect 424 184 444 196)(font "Arial" ))
-	(pt 424 200)
-	(pt 440 200)
-)
-(connector
-	(text "A[2]" (rect 424 200 444 212)(font "Arial" ))
-	(pt 424 216)
-	(pt 440 216)
-)
-(connector
-	(text "A[3]" (rect 424 216 444 228)(font "Arial" ))
-	(pt 424 232)
-	(pt 440 232)
-)
-(connector
-	(text "B[0]" (rect 424 336 444 348)(font "Arial" ))
-	(pt 424 352)
-	(pt 440 352)
-)
-(connector
-	(text "B[1]" (rect 424 352 444 364)(font "Arial" ))
-	(pt 424 368)
-	(pt 440 368)
-)
-(connector
-	(text "B[2]" (rect 424 368 444 380)(font "Arial" ))
-	(pt 424 384)
-	(pt 440 384)
-)
-(connector
-	(text "B[3]" (rect 424 384 444 396)(font "Arial" ))
-	(pt 424 400)
-	(pt 440 400)
-)
-(connector
-	(text "S[0]" (rect 538 592 558 604)(font "Arial" ))
-	(pt 584 608)
-	(pt 528 608)
-)
-(connector
-	(text "S[1]" (rect 538 608 558 620)(font "Arial" ))
-	(pt 584 624)
-	(pt 528 624)
-)
-(connector
-	(text "S[2]" (rect 538 624 558 636)(font "Arial" ))
-	(pt 584 640)
-	(pt 528 640)
-)
-(connector
-	(text "A[3]" (rect 530 640 550 652)(font "Arial" ))
-	(pt 528 656)
-	(pt 584 656)
-)
-(connector
-	(text "B[3]" (rect 538 656 558 668)(font "Arial" ))
-	(pt 584 672)
-	(pt 528 672)
-)
-(connector
-	(text "A[3]" (rect 538 672 558 684)(font "Arial" ))
-	(pt 584 688)
-	(pt 528 688)
-)
-(connector
-	(text "A[2]" (rect 538 688 558 700)(font "Arial" ))
-	(pt 584 704)
-	(pt 528 704)
-)
-(connector
-	(text "S[0]" (rect 538 424 558 436)(font "Arial" ))
-	(pt 584 440)
-	(pt 528 440)
-)
-(connector
-	(text "S[1]" (rect 538 440 558 452)(font "Arial" ))
-	(pt 584 456)
-	(pt 528 456)
-)
-(connector
-	(text "S[2]" (rect 538 456 558 468)(font "Arial" ))
-	(pt 584 472)
-	(pt 528 472)
-)
-(connector
-	(text "A[2]" (rect 530 472 550 484)(font "Arial" ))
-	(pt 584 488)
-	(pt 520 488)
-)
-(connector
-	(text "B[2]" (rect 538 488 558 500)(font "Arial" ))
-	(pt 584 504)
-	(pt 528 504)
-)
-(connector
-	(text "A[1]" (rect 538 504 558 516)(font "Arial" ))
-	(pt 584 520)
-	(pt 528 520)
-)
-(connector
-	(text "A[3]" (rect 538 520 558 532)(font "Arial" ))
-	(pt 584 536)
-	(pt 528 536)
-)
-(connector
-	(text "S[0]" (rect 546 248 566 260)(font "Arial" ))
-	(pt 584 264)
-	(pt 536 264)
-)
-(connector
-	(text "S[1]" (rect 546 264 566 276)(font "Arial" ))
-	(pt 584 280)
-	(pt 536 280)
-)
-(connector
-	(text "S[2]" (rect 546 280 566 292)(font "Arial" ))
-	(pt 584 296)
-	(pt 536 296)
-)
-(connector
-	(text "A[1]" (rect 546 296 566 308)(font "Arial" ))
-	(pt 584 312)
-	(pt 536 312)
-)
-(connector
-	(text "B[1]" (rect 538 312 558 324)(font "Arial" ))
-	(pt 584 328)
-	(pt 528 328)
-)
-(connector
-	(text "A[0]" (rect 538 328 558 340)(font "Arial" ))
-	(pt 584 344)
-	(pt 528 344)
-)
-(connector
-	(text "A[2]" (rect 538 344 558 356)(font "Arial" ))
-	(pt 584 360)
-	(pt 528 360)
-)
-(connector
-	(text "S[0]" (rect 538 72 558 84)(font "Arial" ))
-	(pt 584 88)
-	(pt 528 88)
-)
-(connector
-	(text "S[1]" (rect 538 88 558 100)(font "Arial" ))
-	(pt 584 104)
-	(pt 528 104)
-)
-(connector
-	(text "S[2]" (rect 538 104 558 116)(font "Arial" ))
-	(pt 584 120)
-	(pt 528 120)
-)
-(connector
-	(text "A[0]" (rect 538 120 558 132)(font "Arial" ))
-	(pt 584 136)
-	(pt 528 136)
-)
-(connector
-	(text "B[0]" (rect 538 136 558 148)(font "Arial" ))
-	(pt 584 152)
-	(pt 528 152)
-)
-(connector
-	(text "A[1]" (rect 538 168 558 180)(font "Arial" ))
-	(pt 584 184)
-	(pt 528 184)
-)
-(connector
 	(pt 504 168)
 	(pt 584 168)
 )
@@ -745,4 +555,139 @@ applicable agreement for further details.
 (connector
 	(pt 680 264)
 	(pt 768 264)
+)
+(connector
+	(text "S0" (rect 538 72 550 84)(font "Arial" ))
+	(pt 584 88)
+	(pt 528 88)
+)
+(connector
+	(text "S1" (rect 538 88 550 100)(font "Arial" ))
+	(pt 584 104)
+	(pt 528 104)
+)
+(connector
+	(text "S2" (rect 538 104 550 116)(font "Arial" ))
+	(pt 584 120)
+	(pt 528 120)
+)
+(connector
+	(text "A0" (rect 538 120 550 132)(font "Arial" ))
+	(pt 584 136)
+	(pt 528 136)
+)
+(connector
+	(text "B0" (rect 538 136 550 148)(font "Arial" ))
+	(pt 584 152)
+	(pt 528 152)
+)
+(connector
+	(text "A1" (rect 538 168 550 180)(font "Arial" ))
+	(pt 584 184)
+	(pt 528 184)
+)
+(connector
+	(text "S0" (rect 546 248 558 260)(font "Arial" ))
+	(pt 584 264)
+	(pt 536 264)
+)
+(connector
+	(text "S1" (rect 546 264 558 276)(font "Arial" ))
+	(pt 584 280)
+	(pt 536 280)
+)
+(connector
+	(text "S2" (rect 546 280 558 292)(font "Arial" ))
+	(pt 584 296)
+	(pt 536 296)
+)
+(connector
+	(text "A1" (rect 546 296 558 308)(font "Arial" ))
+	(pt 584 312)
+	(pt 536 312)
+)
+(connector
+	(text "B1" (rect 538 312 550 324)(font "Arial" ))
+	(pt 584 328)
+	(pt 528 328)
+)
+(connector
+	(text "A0" (rect 538 328 550 340)(font "Arial" ))
+	(pt 584 344)
+	(pt 528 344)
+)
+(connector
+	(text "A2" (rect 538 344 550 356)(font "Arial" ))
+	(pt 584 360)
+	(pt 528 360)
+)
+(connector
+	(text "S0" (rect 538 424 550 436)(font "Arial" ))
+	(pt 584 440)
+	(pt 528 440)
+)
+(connector
+	(text "S1" (rect 538 440 550 452)(font "Arial" ))
+	(pt 584 456)
+	(pt 528 456)
+)
+(connector
+	(text "S2" (rect 538 456 550 468)(font "Arial" ))
+	(pt 584 472)
+	(pt 528 472)
+)
+(connector
+	(text "A2" (rect 530 472 542 484)(font "Arial" ))
+	(pt 584 488)
+	(pt 520 488)
+)
+(connector
+	(text "B2" (rect 538 488 550 500)(font "Arial" ))
+	(pt 584 504)
+	(pt 528 504)
+)
+(connector
+	(text "A1" (rect 538 504 550 516)(font "Arial" ))
+	(pt 584 520)
+	(pt 528 520)
+)
+(connector
+	(text "A3" (rect 538 520 550 532)(font "Arial" ))
+	(pt 584 536)
+	(pt 528 536)
+)
+(connector
+	(text "S0" (rect 538 592 550 604)(font "Arial" ))
+	(pt 584 608)
+	(pt 528 608)
+)
+(connector
+	(text "S1" (rect 538 608 550 620)(font "Arial" ))
+	(pt 584 624)
+	(pt 528 624)
+)
+(connector
+	(text "S2" (rect 538 624 550 636)(font "Arial" ))
+	(pt 584 640)
+	(pt 528 640)
+)
+(connector
+	(text "A3" (rect 530 640 542 652)(font "Arial" ))
+	(pt 528 656)
+	(pt 584 656)
+)
+(connector
+	(text "A3" (rect 538 672 550 684)(font "Arial" ))
+	(pt 584 688)
+	(pt 528 688)
+)
+(connector
+	(text "A2" (rect 538 688 550 700)(font "Arial" ))
+	(pt 584 704)
+	(pt 528 704)
+)
+(connector
+	(text "B3" (rect 538 656 550 668)(font "Arial" ))
+	(pt 584 672)
+	(pt 528 672)
 )

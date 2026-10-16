@@ -257,22 +257,6 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 2272 216 2448 232)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "C" (rect 90 0 98 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8))
-		(line (pt 52 4)(pt 78 4))
-		(line (pt 52 12)(pt 78 12))
-		(line (pt 52 12)(pt 52 4))
-		(line (pt 78 4)(pt 82 8))
-		(line (pt 82 8)(pt 78 12))
-		(line (pt 78 12)(pt 82 8))
-	)
-)
-(pin
-	(output)
 	(rect 2272 232 2448 248)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "V" (rect 90 0 98 12)(font "Arial" ))
@@ -372,6 +356,22 @@ applicable agreement for further details.
 	(rect 2256 584 2432 600)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "C3" (rect 90 0 104 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 2272 216 2448 232)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "Cy" (rect 90 0 105 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -1277,9 +1277,27 @@ applicable agreement for further details.
 	)
 )
 (symbol
+	(rect 1912 440 1944 472)
+	(text "GND" (rect 3 6 24 16)(font "Arial" (font_size 6)))
+	(text "inst16" (rect 0 -1 29 11)(font "Arial" )(invisible))
+	(port
+		(pt 16 32)
+		(output)
+		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 9 20 14 32)(font "Courier New" (bold))(invisible))
+		(line (pt 16 24)(pt 16 32))
+	)
+	(drawing
+		(line (pt 24 24)(pt 16 16))
+		(line (pt 16 16)(pt 8 24))
+		(line (pt 24 24)(pt 8 24))
+	)
+	(rotate180)
+)
+(symbol
 	(rect 1712 536 1808 760)
 	(text "logiccircuit4bit" (rect 5 0 85 14)(font "Arial" (font_size 8)))
-	(text "inst15" (rect 8 208 37 220)(font "Arial" ))
+	(text "inst1" (rect 8 208 31 220)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -1389,24 +1407,6 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 80 208))
 	)
 )
-(symbol
-	(rect 1912 440 1944 472)
-	(text "GND" (rect 3 6 24 16)(font "Arial" (font_size 6)))
-	(text "inst16" (rect 0 -1 29 11)(font "Arial" )(invisible))
-	(port
-		(pt 16 32)
-		(output)
-		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
-		(text "1" (rect 9 20 14 32)(font "Courier New" (bold))(invisible))
-		(line (pt 16 24)(pt 16 32))
-	)
-	(drawing
-		(line (pt 24 24)(pt 16 16))
-		(line (pt 16 16)(pt 8 24))
-		(line (pt 24 24)(pt 8 24))
-	)
-	(rotate180)
-)
 (connector
 	(pt 616 432)
 	(pt 480 432)
@@ -1430,42 +1430,6 @@ applicable agreement for further details.
 (connector
 	(pt 480 464)
 	(pt 480 472)
-)
-(connector
-	(pt 616 416)
-	(pt 560 416)
-)
-(connector
-	(pt 560 416)
-	(pt 560 232)
-)
-(connector
-	(pt 368 232)
-	(pt 560 232)
-)
-(connector
-	(pt 1360 384)
-	(pt 1264 384)
-)
-(connector
-	(pt 1264 232)
-	(pt 1264 384)
-)
-(connector
-	(pt 1264 560)
-	(pt 1360 560)
-)
-(connector
-	(pt 1264 384)
-	(pt 1264 560)
-)
-(connector
-	(pt 1360 752)
-	(pt 1264 752)
-)
-(connector
-	(pt 1264 560)
-	(pt 1264 752)
 )
 (connector
 	(pt 920 688)
@@ -1989,11 +1953,6 @@ applicable agreement for further details.
 	(pt 1968 624)
 )
 (connector
-	(text "clk" (rect 570 216 584 228)(font "Arial" ))
-	(pt 560 232)
-	(pt 1264 232)
-)
-(connector
 	(pt 2104 224)
 	(pt 2160 224)
 )
@@ -2020,23 +1979,8 @@ applicable agreement for further details.
 	(pt 2112 608)
 )
 (connector
-	(text "clrn" (rect 2138 288 2155 300)(font "Arial" ))
-	(pt 2160 304)
-	(pt 2128 304)
-)
-(connector
-	(text "clrn" (rect 2122 608 2139 620)(font "Arial" ))
-	(pt 2144 624)
-	(pt 2112 624)
-)
-(connector
 	(pt 1360 576)
 	(pt 1352 576)
-)
-(connector
-	(text "clrn" (rect 1322 752 1339 764)(font "Arial" ))
-	(pt 1312 768)
-	(pt 1352 768)
 )
 (connector
 	(pt 1352 768)
@@ -2160,6 +2104,60 @@ applicable agreement for further details.
 (connector
 	(pt 2240 592)
 	(pt 2256 592)
+)
+(connector
+	(pt 616 416)
+	(pt 560 416)
+)
+(connector
+	(pt 560 416)
+	(pt 560 232)
+)
+(connector
+	(pt 368 232)
+	(pt 560 232)
+)
+(connector
+	(pt 1360 384)
+	(pt 1264 384)
+)
+(connector
+	(pt 1264 232)
+	(pt 1264 384)
+)
+(connector
+	(pt 1264 560)
+	(pt 1360 560)
+)
+(connector
+	(pt 1264 384)
+	(pt 1264 560)
+)
+(connector
+	(pt 1360 752)
+	(pt 1264 752)
+)
+(connector
+	(pt 1264 560)
+	(pt 1264 752)
+)
+(connector
+	(pt 560 232)
+	(pt 1264 232)
+)
+(connector
+	(pt 1312 768)
+	(pt 1352 768)
+)
+(connector
+	(text "CLRN" (rect 2122 608 2152 620)(font "Arial" ))
+	(pt 2144 624)
+	(pt 2112 624)
+)
+(connector
+	(text "CLRN" (rect 2138 288 2168 300)(font "Arial" ))
+	(pt 2160 304)
+	(pt 2128 304)
 )
 (junction (pt 480 432))
 (junction (pt 560 232))
