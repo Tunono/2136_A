@@ -259,7 +259,7 @@ applicable agreement for further details.
 	(output)
 	(rect 2272 232 2448 248)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "V" (rect 90 0 98 12)(font "Arial" ))
+	(text "V" (rect 90 0 99 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -1680,66 +1680,6 @@ applicable agreement for further details.
 	(pt 1120 592)
 )
 (connector
-	(text "S0d" (rect 1466 304 1484 316)(font "Arial" ))
-	(pt 1456 320)
-	(pt 1536 320)
-)
-(connector
-	(text "S1d" (rect 1466 320 1484 332)(font "Arial" ))
-	(pt 1456 336)
-	(pt 1536 336)
-)
-(connector
-	(text "S2d" (rect 1466 336 1484 348)(font "Arial" ))
-	(pt 1456 352)
-	(pt 1536 352)
-)
-(connector
-	(text "S3d" (rect 1466 352 1484 364)(font "Arial" ))
-	(pt 1456 368)
-	(pt 1536 368)
-)
-(connector
-	(text "A0d" (rect 1466 480 1484 492)(font "Arial" ))
-	(pt 1456 496)
-	(pt 1520 496)
-)
-(connector
-	(text "A1d" (rect 1466 496 1484 508)(font "Arial" ))
-	(pt 1456 512)
-	(pt 1520 512)
-)
-(connector
-	(text "A2d" (rect 1466 512 1484 524)(font "Arial" ))
-	(pt 1456 528)
-	(pt 1520 528)
-)
-(connector
-	(text "A3d" (rect 1466 528 1484 540)(font "Arial" ))
-	(pt 1456 544)
-	(pt 1520 544)
-)
-(connector
-	(text "B0d" (rect 1466 664 1484 676)(font "Arial" ))
-	(pt 1456 688)
-	(pt 1520 688)
-)
-(connector
-	(text "B1d" (rect 1466 688 1484 700)(font "Arial" ))
-	(pt 1456 704)
-	(pt 1520 704)
-)
-(connector
-	(text "B2d" (rect 1466 704 1484 716)(font "Arial" ))
-	(pt 1456 720)
-	(pt 1520 720)
-)
-(connector
-	(text "B3d" (rect 1466 720 1484 732)(font "Arial" ))
-	(pt 1456 736)
-	(pt 1520 736)
-)
-(connector
 	(text "S0d" (rect 1674 264 1692 276)(font "Arial" ))
 	(pt 1712 280)
 	(pt 1664 280)
@@ -2158,6 +2098,66 @@ applicable agreement for further details.
 	(text "CLRN" (rect 2138 288 2168 300)(font "Arial" ))
 	(pt 2160 304)
 	(pt 2128 304)
+)
+(connector
+	(text "A0d" (rect 1466 304 1484 316)(font "Arial" ))
+	(pt 1456 320)
+	(pt 1536 320)
+)
+(connector
+	(text "A1d" (rect 1466 320 1484 332)(font "Arial" ))
+	(pt 1456 336)
+	(pt 1536 336)
+)
+(connector
+	(text "A2d" (rect 1466 336 1484 348)(font "Arial" ))
+	(pt 1456 352)
+	(pt 1536 352)
+)
+(connector
+	(text "A3d" (rect 1466 352 1484 364)(font "Arial" ))
+	(pt 1456 368)
+	(pt 1536 368)
+)
+(connector
+	(text "B0d" (rect 1466 480 1484 492)(font "Arial" ))
+	(pt 1456 496)
+	(pt 1520 496)
+)
+(connector
+	(text "B1d" (rect 1466 496 1484 508)(font "Arial" ))
+	(pt 1456 512)
+	(pt 1520 512)
+)
+(connector
+	(text "B2d" (rect 1466 512 1484 524)(font "Arial" ))
+	(pt 1456 528)
+	(pt 1520 528)
+)
+(connector
+	(text "B3d" (rect 1466 528 1484 540)(font "Arial" ))
+	(pt 1456 544)
+	(pt 1520 544)
+)
+(connector
+	(text "S0d" (rect 1466 664 1484 676)(font "Arial" ))
+	(pt 1456 688)
+	(pt 1520 688)
+)
+(connector
+	(text "S1d" (rect 1466 688 1484 700)(font "Arial" ))
+	(pt 1456 704)
+	(pt 1520 704)
+)
+(connector
+	(text "S2d" (rect 1466 704 1484 716)(font "Arial" ))
+	(pt 1456 720)
+	(pt 1520 720)
+)
+(connector
+	(text "S3d" (rect 1466 720 1484 732)(font "Arial" ))
+	(pt 1456 736)
+	(pt 1520 736)
 )
 (junction (pt 480 432))
 (junction (pt 560 232))

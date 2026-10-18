@@ -1,9 +1,9 @@
 |Lab3_top
 S0 <= input_generator_high_freq:inst.S0
 clk => input_generator_high_freq:inst.clk
+clk => register4bit:inst8.clk
 clk => register4bit:inst6.clk
 clk => register4bit:inst7.clk
-clk => register4bit:inst8.clk
 clk => register4bit:inst13.clk
 clk => register4bit:inst12.clk
 S1 <= input_generator_high_freq:inst.S1
@@ -18,9 +18,9 @@ B1 <= input_generator_high_freq:inst.B1
 B2 <= input_generator_high_freq:inst.B2
 B3 <= input_generator_high_freq:inst.B3
 V <= register4bit:inst13.Y1
+CLRN => register4bit:inst8.CLRN
 CLRN => register4bit:inst6.CLRN
 CLRN => register4bit:inst7.CLRN
-CLRN => register4bit:inst8.CLRN
 CLRN => register4bit:inst13.CLRN
 CLRN => register4bit:inst12.CLRN
 Z <= register4bit:inst13.Y2
@@ -91,11 +91,11 @@ Car3 => inst2.IN1
 Car3 => inst3.IN0
 N <= F3.DB_MAX_OUTPUT_PORT_TYPE
 F3 => N.DATAIN
-F3 => inst.IN2
-Z <= inst.DB_MAX_OUTPUT_PORT_TYPE
-F0 => inst.IN0
-F2 => inst.IN1
-F1 => inst.IN3
+F3 => inst9.IN3
+Z <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+F0 => inst9.IN0
+F2 => inst9.IN1
+F1 => inst9.IN2
 V <= inst7.DB_MAX_OUTPUT_PORT_TYPE
 A2D => inst6.IN0
 A3D => inst6.IN1
@@ -104,7 +104,7 @@ A1D => ~NO_FANOUT~
 A0D => ~NO_FANOUT~
 
 
-|Lab3_top|register4bit:inst6
+|Lab3_top|register4bit:inst8
 Y3 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 CLRN => inst1.ACLR
 CLRN => inst.ACLR
@@ -317,7 +317,7 @@ A => 29.IN0
 2C3 => 8.IN0
 
 
-|Lab3_top|register4bit:inst7
+|Lab3_top|register4bit:inst6
 Y3 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 CLRN => inst1.ACLR
 CLRN => inst.ACLR
@@ -336,7 +336,7 @@ Y0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 X0 => inst3.DATAIN
 
 
-|Lab3_top|register4bit:inst8
+|Lab3_top|register4bit:inst7
 Y3 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 CLRN => inst1.ACLR
 CLRN => inst.ACLR

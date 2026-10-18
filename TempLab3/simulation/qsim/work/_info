@@ -4,23 +4,23 @@ K3
 cModel Technology
 Z0 dC:\SEG_2136\TempLab3\simulation\qsim
 vLab3_top
-Z1 !s100 ?aYS^@kkKMVXUVJ5oY1^O1
-Z2 IT`1d3LK[1dc2_M^B_[omQ0
-Z3 V;MG]L_M??WA54VLJPLolE1
-Z4 dC:\SEG_2136\TempLab3\simulation\qsim
-Z5 w1792120793
-Z6 8Temp3.vo
-Z7 FTemp3.vo
+Z1 IJLO20YjlgKm@DN?ndI^g40
+Z2 V;MG]L_M??WA54VLJPLolE1
+Z3 dC:\CEG\2136_A\TempLab3\simulation\qsim
+Z4 w1792282581
+Z5 8Temp3.vo
+Z6 FTemp3.vo
 L0 31
-Z8 OV;L;10.1d;51
+Z7 OV;L;10.1d;51
 r1
 31
-Z9 !s90 -work|work|Temp3.vo|
-Z10 o-work work -O0
-Z11 n@lab3_top
+Z8 !s90 -work|work|Temp3.vo|
+Z9 o-work work -O0
+Z10 n@lab3_top
 !i10b 1
+Z11 !s100 eZ>kbRj50LHT`LOHoWA]e0
 !s85 0
-Z12 !s108 1792120793.603000
+Z12 !s108 1792282582.221000
 Z13 !s107 Temp3.vo|
 !s101 -O0
 vLab3_top_vlg_check_tst
@@ -28,32 +28,32 @@ vLab3_top_vlg_check_tst
 Z14 !s100 HU;==fm@gi6mW]0`4c8JJ2
 Z15 IbQ]G7WN;J<=O5B`DdciLY2
 Z16 V[LJ05zaz5PdhaKP=1588S3
-R4
-Z17 w1792120792
+R3
+Z17 w1792282580
 Z18 8Temp3.vt
 Z19 FTemp3.vt
 L0 59
-R8
+R7
 r1
 !s85 0
 31
-Z20 !s108 1792120793.692000
+Z20 !s108 1792282582.326000
 Z21 !s107 Temp3.vt|
 Z22 !s90 -work|work|Temp3.vt|
 !s101 -O0
-R10
+R9
 Z23 n@lab3_top_vlg_check_tst
 vLab3_top_vlg_sample_tst
 !i10b 1
 Z24 !s100 VS4jEmJH:04X]inhTjzhH2
 Z25 IagEDDJSXCL>dVbN^CJhE42
 Z26 V[7]j<_XX52mKf13gRLNzZ1
-R4
+R3
 R17
 R18
 R19
 L0 29
-R8
+R7
 r1
 !s85 0
 31
@@ -61,19 +61,19 @@ R20
 R21
 R22
 !s101 -O0
-R10
+R9
 Z27 n@lab3_top_vlg_sample_tst
 vLab3_top_vlg_vec_tst
 !i10b 1
-!s100 >@]7C06`bJ`>B3^=V^SDm3
-I[0oC@^4OY@EDz8nZ6HRY61
-Z28 VmQOzSQj<YQO;2H7l6BnS13
-R4
+Z28 !s100 >@]7C06`bJ`>B3^=V^SDm3
+Z29 I[0oC@^4OY@EDz8nZ6HRY61
+Z30 VmQOzSQj<YQO;2H7l6BnS13
+R3
 R17
 R18
 R19
-Z29 L0 667
-R8
+Z31 L0 667
+R7
 r1
 !s85 0
 31
@@ -81,5 +81,5 @@ R20
 R21
 R22
 !s101 -O0
-R10
-Z30 n@lab3_top_vlg_vec_tst
+R9
+Z32 n@lab3_top_vlg_vec_tst

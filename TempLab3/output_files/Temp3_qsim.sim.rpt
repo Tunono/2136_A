@@ -1,6 +1,6 @@
 Simulator report for Temp3_qsim
-Thu Oct 15 22:25:40 2026
-Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Sat Oct 17 20:47:40 2026
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -45,50 +45,50 @@ applicable agreement for further details.
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 1.0 us       ;
-; Simulation Netlist Size     ; 150 nodes    ;
-; Simulation Coverage         ;       0.00 % ;
-; Total Number of Transitions ; 0            ;
+; Simulation Netlist Size     ; 210 nodes    ;
+; Simulation Coverage         ;      83.25 % ;
+; Total Number of Transitions ; 3573         ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Cyclone III  ;
 +-----------------------------+--------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------+
-; Simulator Settings                                                                                                                             ;
-+--------------------------------------------------------------------------------------------+-----------------------------------+---------------+
-; Option                                                                                     ; Setting                           ; Default Value ;
-+--------------------------------------------------------------------------------------------+-----------------------------------+---------------+
-; Simulation mode                                                                            ; Functional                        ; Timing        ;
-; Start time                                                                                 ; 0 ns                              ; 0 ns          ;
-; Simulation results format                                                                  ; VWF                               ;               ;
-; Vector input source                                                                        ; C:/SEG_2136/TempLab3/Waveform.vwf ;               ;
-; Add pins automatically to simulation output waveforms                                      ; On                                ; On            ;
-; Check outputs                                                                              ; Off                               ; Off           ;
-; Report simulation coverage                                                                 ; On                                ; On            ;
-; Display complete 1/0 value coverage report                                                 ; On                                ; On            ;
-; Display missing 1-value coverage report                                                    ; On                                ; On            ;
-; Display missing 0-value coverage report                                                    ; On                                ; On            ;
-; Detect setup and hold time violations                                                      ; Off                               ; Off           ;
-; Detect glitches                                                                            ; Off                               ; Off           ;
-; Disable timing delays in Timing Simulation                                                 ; Off                               ; Off           ;
-; Generate Signal Activity File                                                              ; Off                               ; Off           ;
-; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                               ; Off           ;
-; Group bus channels in simulation results                                                   ; Off                               ; Off           ;
-; Preserve fewer signal transitions to reduce memory requirements                            ; On                                ; On            ;
-; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                        ; INPUT_EDGE    ;
-; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                               ; Off           ;
-; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                               ;               ;
-; Perform Glitch Filtering in Timing Simulation                                              ; Auto                              ; Auto          ;
-; Interconnect Delay Model Type                                                              ; Transport                         ; Transport     ;
-; Cell Delay Model Type                                                                      ; Transport                         ; Transport     ;
-+--------------------------------------------------------------------------------------------+-----------------------------------+---------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                               ;
++--------------------------------------------------------------------------------------------+-------------------------------------+---------------+
+; Option                                                                                     ; Setting                             ; Default Value ;
++--------------------------------------------------------------------------------------------+-------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                          ; Timing        ;
+; Start time                                                                                 ; 0 ns                                ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                 ;               ;
+; Vector input source                                                                        ; C:/CEG/2136_A/TempLab3/Waveform.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                  ; On            ;
+; Check outputs                                                                              ; Off                                 ; Off           ;
+; Report simulation coverage                                                                 ; On                                  ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                  ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                  ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                  ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                 ; Off           ;
+; Detect glitches                                                                            ; Off                                 ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                 ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                 ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                 ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                 ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                  ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                          ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                 ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                 ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport                           ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport                           ; Transport     ;
++--------------------------------------------------------------------------------------------+-------------------------------------+---------------+
 
 
 +----------------------+
 ; Simulation Waveforms ;
 +----------------------+
 Waveform report data cannot be output to ASCII.
-Please use Quartus II 32-bit to view the waveform report data.
+Please use Quartus II 64-Bit to view the waveform report data.
 
 
 +--------------------------------------------------------------------+
@@ -96,338 +96,274 @@ Please use Quartus II 32-bit to view the waveform report data.
 +-----------------------------------------------------+--------------+
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;       0.00 % ;
-; Total nodes checked                                 ; 150          ;
-; Total output ports checked                          ; 149          ;
-; Total output ports with complete 1/0-value coverage ; 0            ;
-; Total output ports with no 1/0-value coverage       ; 149          ;
-; Total output ports with no 1-value coverage         ; 149          ;
-; Total output ports with no 0-value coverage         ; 149          ;
+; Total coverage as a percentage                      ;      83.25 % ;
+; Total nodes checked                                 ; 210          ;
+; Total output ports checked                          ; 209          ;
+; Total output ports with complete 1/0-value coverage ; 174          ;
+; Total output ports with no 1/0-value coverage       ; 24           ;
+; Total output ports with no 1-value coverage         ; 24           ;
+; Total output ports with no 0-value coverage         ; 35           ;
 +-----------------------------------------------------+--------------+
 
 
 The following table displays output ports that toggle between 1 and 0 during simulation.
-+-------------------------------------------------+
-; Complete 1/0-Value Coverage                     ;
-+-----------+------------------+------------------+
-; Node Name ; Output Port Name ; Output Port Type ;
-+-----------+------------------+------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                              ;
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+------------------+
+; Node Name                                                                         ; Output Port Name                                                                  ; Output Port Type ;
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+------------------+
+; |Lab3_top|S0                                                                      ; |Lab3_top|S0                                                                      ; pin_out          ;
+; |Lab3_top|clk                                                                     ; |Lab3_top|clk                                                                     ; out              ;
+; |Lab3_top|S1                                                                      ; |Lab3_top|S1                                                                      ; pin_out          ;
+; |Lab3_top|S2                                                                      ; |Lab3_top|S2                                                                      ; pin_out          ;
+; |Lab3_top|S3                                                                      ; |Lab3_top|S3                                                                      ; pin_out          ;
+; |Lab3_top|V                                                                       ; |Lab3_top|V                                                                       ; pin_out          ;
+; |Lab3_top|Z                                                                       ; |Lab3_top|Z                                                                       ; pin_out          ;
+; |Lab3_top|N                                                                       ; |Lab3_top|N                                                                       ; pin_out          ;
+; |Lab3_top|C0                                                                      ; |Lab3_top|C0                                                                      ; pin_out          ;
+; |Lab3_top|C1                                                                      ; |Lab3_top|C1                                                                      ; pin_out          ;
+; |Lab3_top|C2                                                                      ; |Lab3_top|C2                                                                      ; pin_out          ;
+; |Lab3_top|C3                                                                      ; |Lab3_top|C3                                                                      ; pin_out          ;
+; |Lab3_top|Cy                                                                      ; |Lab3_top|Cy                                                                      ; pin_out          ;
+; |Lab3_top|register4bit:inst12|inst1                                               ; |Lab3_top|register4bit:inst12|inst1                                               ; regout           ;
+; |Lab3_top|register4bit:inst12|inst                                                ; |Lab3_top|register4bit:inst12|inst                                                ; regout           ;
+; |Lab3_top|register4bit:inst12|inst2                                               ; |Lab3_top|register4bit:inst12|inst2                                               ; regout           ;
+; |Lab3_top|register4bit:inst12|inst3                                               ; |Lab3_top|register4bit:inst12|inst3                                               ; regout           ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst3|74151:inst|f74151:sub|81  ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst3|74151:inst|f74151:sub|81  ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst3|74151:inst|f74151:sub|79  ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst3|74151:inst|f74151:sub|79  ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst3|74151:inst|f74151:sub|78  ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst3|74151:inst|f74151:sub|78  ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst3|74151:inst|f74151:sub|71  ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst3|74151:inst|f74151:sub|71  ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst3|74151:inst|f74151:sub|72  ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst3|74151:inst|f74151:sub|72  ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst3|74151:inst|f74151:sub|62  ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst3|74151:inst|f74151:sub|62  ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst3|74151:inst|f74151:sub|83  ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst3|74151:inst|f74151:sub|83  ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst3|74151:inst|f74151:sub|73  ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst3|74151:inst|f74151:sub|73  ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst3|74151:inst|f74151:sub|63  ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst3|74151:inst|f74151:sub|63  ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst3|74151:inst|f74151:sub|64  ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst3|74151:inst|f74151:sub|64  ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst3|74151:inst|f74151:sub|74  ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst3|74151:inst|f74151:sub|74  ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst3|74151:inst|f74151:sub|65  ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst3|74151:inst|f74151:sub|65  ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst3|74151:inst|f74151:sub|66  ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst3|74151:inst|f74151:sub|66  ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|74151:inst|f74151:sub|81  ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|74151:inst|f74151:sub|81  ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|74151:inst|f74151:sub|79  ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|74151:inst|f74151:sub|79  ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|74151:inst|f74151:sub|78  ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|74151:inst|f74151:sub|78  ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|74151:inst|f74151:sub|71  ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|74151:inst|f74151:sub|71  ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|74151:inst|f74151:sub|72  ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|74151:inst|f74151:sub|72  ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|74151:inst|f74151:sub|61  ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|74151:inst|f74151:sub|61  ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|74151:inst|f74151:sub|62  ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|74151:inst|f74151:sub|62  ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|74151:inst|f74151:sub|83  ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|74151:inst|f74151:sub|83  ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|74151:inst|f74151:sub|77  ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|74151:inst|f74151:sub|77  ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|74151:inst|f74151:sub|74  ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|74151:inst|f74151:sub|74  ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|74151:inst|f74151:sub|66  ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|74151:inst|f74151:sub|66  ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst1|74151:inst|f74151:sub|81  ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst1|74151:inst|f74151:sub|81  ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst1|74151:inst|f74151:sub|79  ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst1|74151:inst|f74151:sub|79  ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst1|74151:inst|f74151:sub|78  ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst1|74151:inst|f74151:sub|78  ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst1|74151:inst|f74151:sub|71  ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst1|74151:inst|f74151:sub|71  ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst1|74151:inst|f74151:sub|72  ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst1|74151:inst|f74151:sub|72  ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst1|74151:inst|f74151:sub|62  ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst1|74151:inst|f74151:sub|62  ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst1|74151:inst|f74151:sub|83  ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst1|74151:inst|f74151:sub|83  ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst1|74151:inst|f74151:sub|77  ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst1|74151:inst|f74151:sub|77  ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst1|74151:inst|f74151:sub|73  ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst1|74151:inst|f74151:sub|73  ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst1|74151:inst|f74151:sub|63  ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst1|74151:inst|f74151:sub|63  ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst1|74151:inst|f74151:sub|74  ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst1|74151:inst|f74151:sub|74  ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst1|74151:inst|f74151:sub|66  ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst1|74151:inst|f74151:sub|66  ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst|74151:inst|f74151:sub|81   ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst|74151:inst|f74151:sub|81   ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst|74151:inst|f74151:sub|79   ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst|74151:inst|f74151:sub|79   ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst|74151:inst|f74151:sub|78   ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst|74151:inst|f74151:sub|78   ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst|74151:inst|f74151:sub|71   ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst|74151:inst|f74151:sub|71   ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst|74151:inst|f74151:sub|72   ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst|74151:inst|f74151:sub|72   ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst|74151:inst|f74151:sub|62   ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst|74151:inst|f74151:sub|62   ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst|74151:inst|f74151:sub|83   ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst|74151:inst|f74151:sub|83   ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst|74151:inst|f74151:sub|73   ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst|74151:inst|f74151:sub|73   ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst|74151:inst|f74151:sub|63   ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst|74151:inst|f74151:sub|63   ; out0             ;
+; |Lab3_top|74257:inst14|29                                                         ; |Lab3_top|74257:inst14|29                                                         ; out              ;
+; |Lab3_top|74257:inst14|30                                                         ; |Lab3_top|74257:inst14|30                                                         ; out0             ;
+; |Lab3_top|74257:inst14|36                                                         ; |Lab3_top|74257:inst14|36                                                         ; out0             ;
+; |Lab3_top|74257:inst14|8                                                          ; |Lab3_top|74257:inst14|8                                                          ; out0             ;
+; |Lab3_top|74257:inst14|26                                                         ; |Lab3_top|74257:inst14|26                                                         ; out              ;
+; |Lab3_top|74257:inst14|25                                                         ; |Lab3_top|74257:inst14|25                                                         ; out0             ;
+; |Lab3_top|74257:inst14|35                                                         ; |Lab3_top|74257:inst14|35                                                         ; out0             ;
+; |Lab3_top|74257:inst14|6                                                          ; |Lab3_top|74257:inst14|6                                                          ; out0             ;
+; |Lab3_top|74257:inst14|22                                                         ; |Lab3_top|74257:inst14|22                                                         ; out              ;
+; |Lab3_top|74257:inst14|21                                                         ; |Lab3_top|74257:inst14|21                                                         ; out0             ;
+; |Lab3_top|74257:inst14|34                                                         ; |Lab3_top|74257:inst14|34                                                         ; out0             ;
+; |Lab3_top|74257:inst14|4                                                          ; |Lab3_top|74257:inst14|4                                                          ; out0             ;
+; |Lab3_top|74257:inst14|20                                                         ; |Lab3_top|74257:inst14|20                                                         ; out              ;
+; |Lab3_top|74257:inst14|18                                                         ; |Lab3_top|74257:inst14|18                                                         ; out0             ;
+; |Lab3_top|74257:inst14|33                                                         ; |Lab3_top|74257:inst14|33                                                         ; out0             ;
+; |Lab3_top|74257:inst14|2                                                          ; |Lab3_top|74257:inst14|2                                                          ; out0             ;
+; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst5|74153:inst|9              ; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst5|74153:inst|9              ; out0             ;
+; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst5|74153:inst|1              ; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst5|74153:inst|1              ; out0             ;
+; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst5|74153:inst|2              ; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst5|74153:inst|2              ; out0             ;
+; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst5|74153:inst|3              ; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst5|74153:inst|3              ; out0             ;
+; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst5|74153:inst|7              ; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst5|74153:inst|7              ; out0             ;
+; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst5|fulladder1bit:inst2|inst  ; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst5|fulladder1bit:inst2|inst  ; out0             ;
+; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst5|fulladder1bit:inst2|inst1 ; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst5|fulladder1bit:inst2|inst1 ; out0             ;
+; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst5|fulladder1bit:inst2|inst4 ; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst5|fulladder1bit:inst2|inst4 ; out0             ;
+; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst5|fulladder1bit:inst2|inst2 ; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst5|fulladder1bit:inst2|inst2 ; out0             ;
+; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst5|fulladder1bit:inst2|inst3 ; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst5|fulladder1bit:inst2|inst3 ; out0             ;
+; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst4|74153:inst|9              ; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst4|74153:inst|9              ; out0             ;
+; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst4|74153:inst|1              ; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst4|74153:inst|1              ; out0             ;
+; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst4|74153:inst|2              ; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst4|74153:inst|2              ; out0             ;
+; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst4|74153:inst|3              ; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst4|74153:inst|3              ; out0             ;
+; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst4|74153:inst|10             ; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst4|74153:inst|10             ; out0             ;
+; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst4|74153:inst|5              ; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst4|74153:inst|5              ; out0             ;
+; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst4|fulladder1bit:inst2|inst  ; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst4|fulladder1bit:inst2|inst  ; out0             ;
+; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst4|fulladder1bit:inst2|inst1 ; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst4|fulladder1bit:inst2|inst1 ; out0             ;
+; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst4|fulladder1bit:inst2|inst4 ; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst4|fulladder1bit:inst2|inst4 ; out0             ;
+; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst4|fulladder1bit:inst2|inst2 ; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst4|fulladder1bit:inst2|inst2 ; out0             ;
+; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst4|fulladder1bit:inst2|inst3 ; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst4|fulladder1bit:inst2|inst3 ; out0             ;
+; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst3|74153:inst|4              ; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst3|74153:inst|4              ; out0             ;
+; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst3|74153:inst|10             ; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst3|74153:inst|10             ; out0             ;
+; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst3|74153:inst|5              ; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst3|74153:inst|5              ; out0             ;
+; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst3|fulladder1bit:inst2|inst  ; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst3|fulladder1bit:inst2|inst  ; out0             ;
+; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst3|fulladder1bit:inst2|inst1 ; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst3|fulladder1bit:inst2|inst1 ; out0             ;
+; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst3|fulladder1bit:inst2|inst4 ; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst3|fulladder1bit:inst2|inst4 ; out0             ;
+; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst3|fulladder1bit:inst2|inst3 ; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst3|fulladder1bit:inst2|inst3 ; out0             ;
+; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst|74153:inst|4               ; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst|74153:inst|4               ; out0             ;
+; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst|74153:inst|10              ; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst|74153:inst|10              ; out0             ;
+; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst|74153:inst|5               ; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst|74153:inst|5               ; out0             ;
+; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst|fulladder1bit:inst2|inst   ; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst|fulladder1bit:inst2|inst   ; out0             ;
+; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst|fulladder1bit:inst2|inst1  ; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst|fulladder1bit:inst2|inst1  ; out0             ;
+; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst|fulladder1bit:inst2|inst4  ; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst|fulladder1bit:inst2|inst4  ; out0             ;
+; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst|fulladder1bit:inst2|inst3  ; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst|fulladder1bit:inst2|inst3  ; out0             ;
+; |Lab3_top|register4bit:inst8|inst1                                                ; |Lab3_top|register4bit:inst8|inst1                                                ; regout           ;
+; |Lab3_top|register4bit:inst8|inst                                                 ; |Lab3_top|register4bit:inst8|inst                                                 ; regout           ;
+; |Lab3_top|register4bit:inst8|inst2                                                ; |Lab3_top|register4bit:inst8|inst2                                                ; regout           ;
+; |Lab3_top|register4bit:inst8|inst3                                                ; |Lab3_top|register4bit:inst8|inst3                                                ; regout           ;
+; |Lab3_top|state4bit:inst11|inst2                                                  ; |Lab3_top|state4bit:inst11|inst2                                                  ; out0             ;
+; |Lab3_top|state4bit:inst11|inst9                                                  ; |Lab3_top|state4bit:inst11|inst9                                                  ; out0             ;
+; |Lab3_top|state4bit:inst11|inst7                                                  ; |Lab3_top|state4bit:inst11|inst7                                                  ; out0             ;
+; |Lab3_top|state4bit:inst11|inst1                                                  ; |Lab3_top|state4bit:inst11|inst1                                                  ; out0             ;
+; |Lab3_top|state4bit:inst11|inst3                                                  ; |Lab3_top|state4bit:inst11|inst3                                                  ; out0             ;
+; |Lab3_top|register4bit:inst13|inst1                                               ; |Lab3_top|register4bit:inst13|inst1                                               ; regout           ;
+; |Lab3_top|register4bit:inst13|inst                                                ; |Lab3_top|register4bit:inst13|inst                                                ; regout           ;
+; |Lab3_top|register4bit:inst13|inst2                                               ; |Lab3_top|register4bit:inst13|inst2                                               ; regout           ;
+; |Lab3_top|register4bit:inst13|inst3                                               ; |Lab3_top|register4bit:inst13|inst3                                               ; regout           ;
+; |Lab3_top|input_generator_high_freq:inst|count~0                                  ; |Lab3_top|input_generator_high_freq:inst|count~0                                  ; out              ;
+; |Lab3_top|input_generator_high_freq:inst|count~1                                  ; |Lab3_top|input_generator_high_freq:inst|count~1                                  ; out              ;
+; |Lab3_top|input_generator_high_freq:inst|count~2                                  ; |Lab3_top|input_generator_high_freq:inst|count~2                                  ; out              ;
+; |Lab3_top|input_generator_high_freq:inst|count[2]                                 ; |Lab3_top|input_generator_high_freq:inst|count[2]                                 ; regout           ;
+; |Lab3_top|input_generator_high_freq:inst|count[1]                                 ; |Lab3_top|input_generator_high_freq:inst|count[1]                                 ; regout           ;
+; |Lab3_top|input_generator_high_freq:inst|count[0]                                 ; |Lab3_top|input_generator_high_freq:inst|count[0]                                 ; regout           ;
+; |Lab3_top|input_generator_high_freq:inst|pr_state.state0                          ; |Lab3_top|input_generator_high_freq:inst|pr_state.state0                          ; regout           ;
+; |Lab3_top|input_generator_high_freq:inst|pr_state.state1                          ; |Lab3_top|input_generator_high_freq:inst|pr_state.state1                          ; regout           ;
+; |Lab3_top|input_generator_high_freq:inst|pr_state.state2                          ; |Lab3_top|input_generator_high_freq:inst|pr_state.state2                          ; regout           ;
+; |Lab3_top|input_generator_high_freq:inst|pr_state.state3                          ; |Lab3_top|input_generator_high_freq:inst|pr_state.state3                          ; regout           ;
+; |Lab3_top|input_generator_high_freq:inst|pr_state.state4                          ; |Lab3_top|input_generator_high_freq:inst|pr_state.state4                          ; regout           ;
+; |Lab3_top|input_generator_high_freq:inst|pr_state.state5                          ; |Lab3_top|input_generator_high_freq:inst|pr_state.state5                          ; regout           ;
+; |Lab3_top|input_generator_high_freq:inst|pr_state.state6                          ; |Lab3_top|input_generator_high_freq:inst|pr_state.state6                          ; regout           ;
+; |Lab3_top|input_generator_high_freq:inst|pr_state.state7                          ; |Lab3_top|input_generator_high_freq:inst|pr_state.state7                          ; regout           ;
+; |Lab3_top|input_generator_high_freq:inst|pr_state.state8                          ; |Lab3_top|input_generator_high_freq:inst|pr_state.state8                          ; regout           ;
+; |Lab3_top|input_generator_high_freq:inst|pr_state.state9                          ; |Lab3_top|input_generator_high_freq:inst|pr_state.state9                          ; regout           ;
+; |Lab3_top|input_generator_high_freq:inst|pr_state.state10                         ; |Lab3_top|input_generator_high_freq:inst|pr_state.state10                         ; regout           ;
+; |Lab3_top|input_generator_high_freq:inst|pr_state.state11                         ; |Lab3_top|input_generator_high_freq:inst|pr_state.state11                         ; regout           ;
+; |Lab3_top|input_generator_high_freq:inst|WideOr0                                  ; |Lab3_top|input_generator_high_freq:inst|WideOr0                                  ; out0             ;
+; |Lab3_top|input_generator_high_freq:inst|WideOr1                                  ; |Lab3_top|input_generator_high_freq:inst|WideOr1                                  ; out0             ;
+; |Lab3_top|input_generator_high_freq:inst|WideOr2                                  ; |Lab3_top|input_generator_high_freq:inst|WideOr2                                  ; out0             ;
+; |Lab3_top|input_generator_high_freq:inst|WideOr3                                  ; |Lab3_top|input_generator_high_freq:inst|WideOr3                                  ; out0             ;
+; |Lab3_top|input_generator_high_freq:inst|pr_state.state15                         ; |Lab3_top|input_generator_high_freq:inst|pr_state.state15                         ; regout           ;
+; |Lab3_top|input_generator_high_freq:inst|pr_state.state14                         ; |Lab3_top|input_generator_high_freq:inst|pr_state.state14                         ; regout           ;
+; |Lab3_top|input_generator_high_freq:inst|pr_state.state13                         ; |Lab3_top|input_generator_high_freq:inst|pr_state.state13                         ; regout           ;
+; |Lab3_top|input_generator_high_freq:inst|pr_state.state12                         ; |Lab3_top|input_generator_high_freq:inst|pr_state.state12                         ; regout           ;
+; |Lab3_top|input_generator_high_freq:inst|pr_state~0                               ; |Lab3_top|input_generator_high_freq:inst|pr_state~0                               ; out0             ;
+; |Lab3_top|input_generator_high_freq:inst|WideOr0~0                                ; |Lab3_top|input_generator_high_freq:inst|WideOr0~0                                ; out0             ;
+; |Lab3_top|input_generator_high_freq:inst|WideOr1~0                                ; |Lab3_top|input_generator_high_freq:inst|WideOr1~0                                ; out0             ;
+; |Lab3_top|input_generator_high_freq:inst|WideOr0~1                                ; |Lab3_top|input_generator_high_freq:inst|WideOr0~1                                ; out0             ;
+; |Lab3_top|input_generator_high_freq:inst|WideOr2~0                                ; |Lab3_top|input_generator_high_freq:inst|WideOr2~0                                ; out0             ;
+; |Lab3_top|input_generator_high_freq:inst|WideOr0~2                                ; |Lab3_top|input_generator_high_freq:inst|WideOr0~2                                ; out0             ;
+; |Lab3_top|input_generator_high_freq:inst|WideOr1~1                                ; |Lab3_top|input_generator_high_freq:inst|WideOr1~1                                ; out0             ;
+; |Lab3_top|input_generator_high_freq:inst|WideOr0~3                                ; |Lab3_top|input_generator_high_freq:inst|WideOr0~3                                ; out0             ;
+; |Lab3_top|input_generator_high_freq:inst|WideOr3~0                                ; |Lab3_top|input_generator_high_freq:inst|WideOr3~0                                ; out0             ;
+; |Lab3_top|input_generator_high_freq:inst|WideOr0~4                                ; |Lab3_top|input_generator_high_freq:inst|WideOr0~4                                ; out0             ;
+; |Lab3_top|input_generator_high_freq:inst|WideOr1~2                                ; |Lab3_top|input_generator_high_freq:inst|WideOr1~2                                ; out0             ;
+; |Lab3_top|input_generator_high_freq:inst|WideOr0~5                                ; |Lab3_top|input_generator_high_freq:inst|WideOr0~5                                ; out0             ;
+; |Lab3_top|input_generator_high_freq:inst|WideOr2~1                                ; |Lab3_top|input_generator_high_freq:inst|WideOr2~1                                ; out0             ;
+; |Lab3_top|input_generator_high_freq:inst|WideOr0~6                                ; |Lab3_top|input_generator_high_freq:inst|WideOr0~6                                ; out0             ;
+; |Lab3_top|input_generator_high_freq:inst|WideOr1~3                                ; |Lab3_top|input_generator_high_freq:inst|WideOr1~3                                ; out0             ;
+; |Lab3_top|input_generator_high_freq:inst|WideOr0~7                                ; |Lab3_top|input_generator_high_freq:inst|WideOr0~7                                ; out0             ;
+; |Lab3_top|input_generator_high_freq:inst|nx_state.state0_816~0                    ; |Lab3_top|input_generator_high_freq:inst|nx_state.state0_816~0                    ; out0             ;
+; |Lab3_top|input_generator_high_freq:inst|pr_state~4                               ; |Lab3_top|input_generator_high_freq:inst|pr_state~4                               ; out0             ;
+; |Lab3_top|input_generator_high_freq:inst|Add0~0                                   ; |Lab3_top|input_generator_high_freq:inst|Add0~0                                   ; out0             ;
+; |Lab3_top|input_generator_high_freq:inst|Add0~1                                   ; |Lab3_top|input_generator_high_freq:inst|Add0~1                                   ; out0             ;
+; |Lab3_top|input_generator_high_freq:inst|Add0~2                                   ; |Lab3_top|input_generator_high_freq:inst|Add0~2                                   ; out0             ;
+; |Lab3_top|input_generator_high_freq:inst|Equal0~0                                 ; |Lab3_top|input_generator_high_freq:inst|Equal0~0                                 ; out0             ;
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 1 during simulation.
-+------------------------------------------------------------------------------------------------------------------------+
-; Missing 1-Value Coverage                                                                                               ;
-+--------------------------------------------------+--------------------------------------------------+------------------+
-; Node Name                                        ; Output Port Name                                 ; Output Port Type ;
-+--------------------------------------------------+--------------------------------------------------+------------------+
-; |input_generator_high_freq|count~0               ; |input_generator_high_freq|count~0               ; out              ;
-; |input_generator_high_freq|count~1               ; |input_generator_high_freq|count~1               ; out              ;
-; |input_generator_high_freq|count~2               ; |input_generator_high_freq|count~2               ; out              ;
-; |input_generator_high_freq|process_2~0           ; |input_generator_high_freq|process_2~0           ; out0             ;
-; |input_generator_high_freq|count[2]              ; |input_generator_high_freq|count[2]              ; regout           ;
-; |input_generator_high_freq|count[1]              ; |input_generator_high_freq|count[1]              ; regout           ;
-; |input_generator_high_freq|count[0]              ; |input_generator_high_freq|count[0]              ; regout           ;
-; |input_generator_high_freq|pr_state.state0       ; |input_generator_high_freq|pr_state.state0       ; regout           ;
-; |input_generator_high_freq|pr_state.state1       ; |input_generator_high_freq|pr_state.state1       ; regout           ;
-; |input_generator_high_freq|pr_state.state2       ; |input_generator_high_freq|pr_state.state2       ; regout           ;
-; |input_generator_high_freq|pr_state.state3       ; |input_generator_high_freq|pr_state.state3       ; regout           ;
-; |input_generator_high_freq|pr_state.state4       ; |input_generator_high_freq|pr_state.state4       ; regout           ;
-; |input_generator_high_freq|pr_state.state5       ; |input_generator_high_freq|pr_state.state5       ; regout           ;
-; |input_generator_high_freq|pr_state.state6       ; |input_generator_high_freq|pr_state.state6       ; regout           ;
-; |input_generator_high_freq|pr_state.state7       ; |input_generator_high_freq|pr_state.state7       ; regout           ;
-; |input_generator_high_freq|pr_state.state8       ; |input_generator_high_freq|pr_state.state8       ; regout           ;
-; |input_generator_high_freq|pr_state.state9       ; |input_generator_high_freq|pr_state.state9       ; regout           ;
-; |input_generator_high_freq|pr_state.state10      ; |input_generator_high_freq|pr_state.state10      ; regout           ;
-; |input_generator_high_freq|pr_state.state11      ; |input_generator_high_freq|pr_state.state11      ; regout           ;
-; |input_generator_high_freq|nx_state.state1_804   ; |input_generator_high_freq|nx_state.state1_804   ; out              ;
-; |input_generator_high_freq|process_2~1           ; |input_generator_high_freq|process_2~1           ; out0             ;
-; |input_generator_high_freq|process_2~2           ; |input_generator_high_freq|process_2~2           ; out0             ;
-; |input_generator_high_freq|nx_state.state2_792   ; |input_generator_high_freq|nx_state.state2_792   ; out              ;
-; |input_generator_high_freq|nx_state.state1~0     ; |input_generator_high_freq|nx_state.state1~0     ; out0             ;
-; |input_generator_high_freq|nx_state.state1~1     ; |input_generator_high_freq|nx_state.state1~1     ; out0             ;
-; |input_generator_high_freq|nx_state.state3_780   ; |input_generator_high_freq|nx_state.state3_780   ; out              ;
-; |input_generator_high_freq|nx_state.state4_768   ; |input_generator_high_freq|nx_state.state4_768   ; out              ;
-; |input_generator_high_freq|nx_state.state5_756   ; |input_generator_high_freq|nx_state.state5_756   ; out              ;
-; |input_generator_high_freq|nx_state.state6_744   ; |input_generator_high_freq|nx_state.state6_744   ; out              ;
-; |input_generator_high_freq|nx_state.state7_732   ; |input_generator_high_freq|nx_state.state7_732   ; out              ;
-; |input_generator_high_freq|nx_state.state8_720   ; |input_generator_high_freq|nx_state.state8_720   ; out              ;
-; |input_generator_high_freq|process_2~3           ; |input_generator_high_freq|process_2~3           ; out0             ;
-; |input_generator_high_freq|process_2~4           ; |input_generator_high_freq|process_2~4           ; out0             ;
-; |input_generator_high_freq|nx_state.state9_708   ; |input_generator_high_freq|nx_state.state9_708   ; out              ;
-; |input_generator_high_freq|nx_state.state10_696  ; |input_generator_high_freq|nx_state.state10_696  ; out              ;
-; |input_generator_high_freq|nx_state.state11_684  ; |input_generator_high_freq|nx_state.state11_684  ; out              ;
-; |input_generator_high_freq|nx_state.state12_672  ; |input_generator_high_freq|nx_state.state12_672  ; out              ;
-; |input_generator_high_freq|nx_state.state13_660  ; |input_generator_high_freq|nx_state.state13_660  ; out              ;
-; |input_generator_high_freq|nx_state.state14_648  ; |input_generator_high_freq|nx_state.state14_648  ; out              ;
-; |input_generator_high_freq|nx_state.state15_636  ; |input_generator_high_freq|nx_state.state15_636  ; out              ;
-; |input_generator_high_freq|process_2~5           ; |input_generator_high_freq|process_2~5           ; out0             ;
-; |input_generator_high_freq|process_2~6           ; |input_generator_high_freq|process_2~6           ; out0             ;
-; |input_generator_high_freq|process_2~7           ; |input_generator_high_freq|process_2~7           ; out0             ;
-; |input_generator_high_freq|process_2~8           ; |input_generator_high_freq|process_2~8           ; out0             ;
-; |input_generator_high_freq|WideOr0               ; |input_generator_high_freq|WideOr0               ; out0             ;
-; |input_generator_high_freq|WideOr1               ; |input_generator_high_freq|WideOr1               ; out0             ;
-; |input_generator_high_freq|WideOr2               ; |input_generator_high_freq|WideOr2               ; out0             ;
-; |input_generator_high_freq|WideOr3               ; |input_generator_high_freq|WideOr3               ; out0             ;
-; |input_generator_high_freq|pr_state.state15      ; |input_generator_high_freq|pr_state.state15      ; regout           ;
-; |input_generator_high_freq|pr_state.state14      ; |input_generator_high_freq|pr_state.state14      ; regout           ;
-; |input_generator_high_freq|nx_state.state1~2     ; |input_generator_high_freq|nx_state.state1~2     ; out0             ;
-; |input_generator_high_freq|S0~0                  ; |input_generator_high_freq|S0~0                  ; out              ;
-; |input_generator_high_freq|S0~1                  ; |input_generator_high_freq|S0~1                  ; out              ;
-; |input_generator_high_freq|S0~2                  ; |input_generator_high_freq|S0~2                  ; out              ;
-; |input_generator_high_freq|S0~3                  ; |input_generator_high_freq|S0~3                  ; out              ;
-; |input_generator_high_freq|S0~4                  ; |input_generator_high_freq|S0~4                  ; out              ;
-; |input_generator_high_freq|S1~0                  ; |input_generator_high_freq|S1~0                  ; out              ;
-; |input_generator_high_freq|S1~1                  ; |input_generator_high_freq|S1~1                  ; out              ;
-; |input_generator_high_freq|S1~2                  ; |input_generator_high_freq|S1~2                  ; out              ;
-; |input_generator_high_freq|S1~3                  ; |input_generator_high_freq|S1~3                  ; out              ;
-; |input_generator_high_freq|S1~4                  ; |input_generator_high_freq|S1~4                  ; out              ;
-; |input_generator_high_freq|S2~0                  ; |input_generator_high_freq|S2~0                  ; out              ;
-; |input_generator_high_freq|S2~1                  ; |input_generator_high_freq|S2~1                  ; out              ;
-; |input_generator_high_freq|S2~2                  ; |input_generator_high_freq|S2~2                  ; out              ;
-; |input_generator_high_freq|S2~3                  ; |input_generator_high_freq|S2~3                  ; out              ;
-; |input_generator_high_freq|S2~4                  ; |input_generator_high_freq|S2~4                  ; out              ;
-; |input_generator_high_freq|S3~0                  ; |input_generator_high_freq|S3~0                  ; out              ;
-; |input_generator_high_freq|S3~1                  ; |input_generator_high_freq|S3~1                  ; out              ;
-; |input_generator_high_freq|S3~2                  ; |input_generator_high_freq|S3~2                  ; out              ;
-; |input_generator_high_freq|S3~3                  ; |input_generator_high_freq|S3~3                  ; out              ;
-; |input_generator_high_freq|S3~4                  ; |input_generator_high_freq|S3~4                  ; out              ;
-; |input_generator_high_freq|A0~0                  ; |input_generator_high_freq|A0~0                  ; out              ;
-; |input_generator_high_freq|A0~1                  ; |input_generator_high_freq|A0~1                  ; out              ;
-; |input_generator_high_freq|A0~2                  ; |input_generator_high_freq|A0~2                  ; out              ;
-; |input_generator_high_freq|A1~0                  ; |input_generator_high_freq|A1~0                  ; out              ;
-; |input_generator_high_freq|A1~1                  ; |input_generator_high_freq|A1~1                  ; out              ;
-; |input_generator_high_freq|A1~2                  ; |input_generator_high_freq|A1~2                  ; out              ;
-; |input_generator_high_freq|A1~3                  ; |input_generator_high_freq|A1~3                  ; out              ;
-; |input_generator_high_freq|A2~0                  ; |input_generator_high_freq|A2~0                  ; out              ;
-; |input_generator_high_freq|A2~1                  ; |input_generator_high_freq|A2~1                  ; out              ;
-; |input_generator_high_freq|A3~0                  ; |input_generator_high_freq|A3~0                  ; out              ;
-; |input_generator_high_freq|B1~0                  ; |input_generator_high_freq|B1~0                  ; out              ;
-; |input_generator_high_freq|B1~1                  ; |input_generator_high_freq|B1~1                  ; out              ;
-; |input_generator_high_freq|B1~2                  ; |input_generator_high_freq|B1~2                  ; out              ;
-; |input_generator_high_freq|B1~3                  ; |input_generator_high_freq|B1~3                  ; out              ;
-; |input_generator_high_freq|B2~0                  ; |input_generator_high_freq|B2~0                  ; out              ;
-; |input_generator_high_freq|B2~1                  ; |input_generator_high_freq|B2~1                  ; out              ;
-; |input_generator_high_freq|B2~2                  ; |input_generator_high_freq|B2~2                  ; out              ;
-; |input_generator_high_freq|B3~0                  ; |input_generator_high_freq|B3~0                  ; out              ;
-; |input_generator_high_freq|B3~1                  ; |input_generator_high_freq|B3~1                  ; out              ;
-; |input_generator_high_freq|B3~2                  ; |input_generator_high_freq|B3~2                  ; out              ;
-; |input_generator_high_freq|pr_state.state13      ; |input_generator_high_freq|pr_state.state13      ; regout           ;
-; |input_generator_high_freq|nx_state.state0_816   ; |input_generator_high_freq|nx_state.state0_816   ; out              ;
-; |input_generator_high_freq|pr_state.state12      ; |input_generator_high_freq|pr_state.state12      ; regout           ;
-; |input_generator_high_freq|nx_state.state1~3     ; |input_generator_high_freq|nx_state.state1~3     ; out0             ;
-; |input_generator_high_freq|clk                   ; |input_generator_high_freq|clk                   ; out              ;
-; |input_generator_high_freq|code0                 ; |input_generator_high_freq|code0                 ; out              ;
-; |input_generator_high_freq|code1                 ; |input_generator_high_freq|code1                 ; out              ;
-; |input_generator_high_freq|code2                 ; |input_generator_high_freq|code2                 ; out              ;
-; |input_generator_high_freq|S0                    ; |input_generator_high_freq|S0                    ; pin_out          ;
-; |input_generator_high_freq|S1                    ; |input_generator_high_freq|S1                    ; pin_out          ;
-; |input_generator_high_freq|S2                    ; |input_generator_high_freq|S2                    ; pin_out          ;
-; |input_generator_high_freq|S3                    ; |input_generator_high_freq|S3                    ; pin_out          ;
-; |input_generator_high_freq|A0                    ; |input_generator_high_freq|A0                    ; pin_out          ;
-; |input_generator_high_freq|A1                    ; |input_generator_high_freq|A1                    ; pin_out          ;
-; |input_generator_high_freq|A2                    ; |input_generator_high_freq|A2                    ; pin_out          ;
-; |input_generator_high_freq|A3                    ; |input_generator_high_freq|A3                    ; pin_out          ;
-; |input_generator_high_freq|B0                    ; |input_generator_high_freq|B0                    ; pin_out          ;
-; |input_generator_high_freq|B1                    ; |input_generator_high_freq|B1                    ; pin_out          ;
-; |input_generator_high_freq|B2                    ; |input_generator_high_freq|B2                    ; pin_out          ;
-; |input_generator_high_freq|B3                    ; |input_generator_high_freq|B3                    ; pin_out          ;
-; |input_generator_high_freq|pr_state~0            ; |input_generator_high_freq|pr_state~0            ; out0             ;
-; |input_generator_high_freq|pr_state.state0~0     ; |input_generator_high_freq|pr_state.state0~0     ; out0             ;
-; |input_generator_high_freq|WideOr0~0             ; |input_generator_high_freq|WideOr0~0             ; out0             ;
-; |input_generator_high_freq|pr_state.state1~0     ; |input_generator_high_freq|pr_state.state1~0     ; out0             ;
-; |input_generator_high_freq|WideOr1~0             ; |input_generator_high_freq|WideOr1~0             ; out0             ;
-; |input_generator_high_freq|pr_state.state2~0     ; |input_generator_high_freq|pr_state.state2~0     ; out0             ;
-; |input_generator_high_freq|WideOr0~1             ; |input_generator_high_freq|WideOr0~1             ; out0             ;
-; |input_generator_high_freq|pr_state.state3~0     ; |input_generator_high_freq|pr_state.state3~0     ; out0             ;
-; |input_generator_high_freq|WideOr2~0             ; |input_generator_high_freq|WideOr2~0             ; out0             ;
-; |input_generator_high_freq|pr_state.state4~0     ; |input_generator_high_freq|pr_state.state4~0     ; out0             ;
-; |input_generator_high_freq|WideOr0~2             ; |input_generator_high_freq|WideOr0~2             ; out0             ;
-; |input_generator_high_freq|pr_state.state5~0     ; |input_generator_high_freq|pr_state.state5~0     ; out0             ;
-; |input_generator_high_freq|WideOr1~1             ; |input_generator_high_freq|WideOr1~1             ; out0             ;
-; |input_generator_high_freq|pr_state.state6~0     ; |input_generator_high_freq|pr_state.state6~0     ; out0             ;
-; |input_generator_high_freq|WideOr0~3             ; |input_generator_high_freq|WideOr0~3             ; out0             ;
-; |input_generator_high_freq|pr_state.state7~0     ; |input_generator_high_freq|pr_state.state7~0     ; out0             ;
-; |input_generator_high_freq|WideOr3~0             ; |input_generator_high_freq|WideOr3~0             ; out0             ;
-; |input_generator_high_freq|pr_state.state8~0     ; |input_generator_high_freq|pr_state.state8~0     ; out0             ;
-; |input_generator_high_freq|WideOr0~4             ; |input_generator_high_freq|WideOr0~4             ; out0             ;
-; |input_generator_high_freq|pr_state.state9~0     ; |input_generator_high_freq|pr_state.state9~0     ; out0             ;
-; |input_generator_high_freq|WideOr1~2             ; |input_generator_high_freq|WideOr1~2             ; out0             ;
-; |input_generator_high_freq|pr_state.state10~0    ; |input_generator_high_freq|pr_state.state10~0    ; out0             ;
-; |input_generator_high_freq|WideOr0~5             ; |input_generator_high_freq|WideOr0~5             ; out0             ;
-; |input_generator_high_freq|pr_state.state11~0    ; |input_generator_high_freq|pr_state.state11~0    ; out0             ;
-; |input_generator_high_freq|WideOr2~1             ; |input_generator_high_freq|WideOr2~1             ; out0             ;
-; |input_generator_high_freq|pr_state.state12~0    ; |input_generator_high_freq|pr_state.state12~0    ; out0             ;
-; |input_generator_high_freq|WideOr0~6             ; |input_generator_high_freq|WideOr0~6             ; out0             ;
-; |input_generator_high_freq|pr_state.state13~0    ; |input_generator_high_freq|pr_state.state13~0    ; out0             ;
-; |input_generator_high_freq|WideOr1~3             ; |input_generator_high_freq|WideOr1~3             ; out0             ;
-; |input_generator_high_freq|pr_state.state14~0    ; |input_generator_high_freq|pr_state.state14~0    ; out0             ;
-; |input_generator_high_freq|WideOr0~7             ; |input_generator_high_freq|WideOr0~7             ; out0             ;
-; |input_generator_high_freq|pr_state.state15~0    ; |input_generator_high_freq|pr_state.state15~0    ; out0             ;
-; |input_generator_high_freq|nx_state.state0_816~0 ; |input_generator_high_freq|nx_state.state0_816~0 ; out0             ;
-; |input_generator_high_freq|pr_state~4            ; |input_generator_high_freq|pr_state~4            ; out0             ;
-; |input_generator_high_freq|Add0~0                ; |input_generator_high_freq|Add0~0                ; out0             ;
-; |input_generator_high_freq|Add0~1                ; |input_generator_high_freq|Add0~1                ; out0             ;
-; |input_generator_high_freq|Add0~2                ; |input_generator_high_freq|Add0~2                ; out0             ;
-; |input_generator_high_freq|Equal0~0              ; |input_generator_high_freq|Equal0~0              ; out0             ;
-+--------------------------------------------------+--------------------------------------------------+------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                 ;
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+------------------+
+; Node Name                                                                         ; Output Port Name                                                                  ; Output Port Type ;
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+------------------+
+; |Lab3_top|A0                                                                      ; |Lab3_top|A0                                                                      ; pin_out          ;
+; |Lab3_top|A1                                                                      ; |Lab3_top|A1                                                                      ; pin_out          ;
+; |Lab3_top|A2                                                                      ; |Lab3_top|A2                                                                      ; pin_out          ;
+; |Lab3_top|A3                                                                      ; |Lab3_top|A3                                                                      ; pin_out          ;
+; |Lab3_top|B0                                                                      ; |Lab3_top|B0                                                                      ; pin_out          ;
+; |Lab3_top|B1                                                                      ; |Lab3_top|B1                                                                      ; pin_out          ;
+; |Lab3_top|B2                                                                      ; |Lab3_top|B2                                                                      ; pin_out          ;
+; |Lab3_top|B3                                                                      ; |Lab3_top|B3                                                                      ; pin_out          ;
+; |Lab3_top|CLRN                                                                    ; |Lab3_top|CLRN                                                                    ; out              ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|inst6                     ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|inst6                     ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|inst8                     ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|inst8                     ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|74151:inst|f74151:sub|73  ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|74151:inst|f74151:sub|73  ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|74151:inst|f74151:sub|69  ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|74151:inst|f74151:sub|69  ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|74151:inst|f74151:sub|63  ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|74151:inst|f74151:sub|63  ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|74151:inst|f74151:sub|64  ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|74151:inst|f74151:sub|64  ; out0             ;
+; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst5|74153:inst|4              ; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst5|74153:inst|4              ; out0             ;
+; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst4|74153:inst|4              ; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst4|74153:inst|4              ; out0             ;
+; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst4|74153:inst|7              ; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst4|74153:inst|7              ; out0             ;
+; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst3|74153:inst|7              ; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst3|74153:inst|7              ; out0             ;
+; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst3|fulladder1bit:inst2|inst2 ; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst3|fulladder1bit:inst2|inst2 ; out0             ;
+; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst|74153:inst|7               ; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst|74153:inst|7               ; out0             ;
+; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst|fulladder1bit:inst2|inst2  ; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst|fulladder1bit:inst2|inst2  ; out0             ;
+; |Lab3_top|state4bit:inst11|inst8                                                  ; |Lab3_top|state4bit:inst11|inst8                                                  ; out0             ;
+; |Lab3_top|state4bit:inst11|inst6                                                  ; |Lab3_top|state4bit:inst11|inst6                                                  ; out0             ;
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 0 during simulation.
-+------------------------------------------------------------------------------------------------------------------------+
-; Missing 0-Value Coverage                                                                                               ;
-+--------------------------------------------------+--------------------------------------------------+------------------+
-; Node Name                                        ; Output Port Name                                 ; Output Port Type ;
-+--------------------------------------------------+--------------------------------------------------+------------------+
-; |input_generator_high_freq|count~0               ; |input_generator_high_freq|count~0               ; out              ;
-; |input_generator_high_freq|count~1               ; |input_generator_high_freq|count~1               ; out              ;
-; |input_generator_high_freq|count~2               ; |input_generator_high_freq|count~2               ; out              ;
-; |input_generator_high_freq|process_2~0           ; |input_generator_high_freq|process_2~0           ; out0             ;
-; |input_generator_high_freq|count[2]              ; |input_generator_high_freq|count[2]              ; regout           ;
-; |input_generator_high_freq|count[1]              ; |input_generator_high_freq|count[1]              ; regout           ;
-; |input_generator_high_freq|count[0]              ; |input_generator_high_freq|count[0]              ; regout           ;
-; |input_generator_high_freq|pr_state.state0       ; |input_generator_high_freq|pr_state.state0       ; regout           ;
-; |input_generator_high_freq|pr_state.state1       ; |input_generator_high_freq|pr_state.state1       ; regout           ;
-; |input_generator_high_freq|pr_state.state2       ; |input_generator_high_freq|pr_state.state2       ; regout           ;
-; |input_generator_high_freq|pr_state.state3       ; |input_generator_high_freq|pr_state.state3       ; regout           ;
-; |input_generator_high_freq|pr_state.state4       ; |input_generator_high_freq|pr_state.state4       ; regout           ;
-; |input_generator_high_freq|pr_state.state5       ; |input_generator_high_freq|pr_state.state5       ; regout           ;
-; |input_generator_high_freq|pr_state.state6       ; |input_generator_high_freq|pr_state.state6       ; regout           ;
-; |input_generator_high_freq|pr_state.state7       ; |input_generator_high_freq|pr_state.state7       ; regout           ;
-; |input_generator_high_freq|pr_state.state8       ; |input_generator_high_freq|pr_state.state8       ; regout           ;
-; |input_generator_high_freq|pr_state.state9       ; |input_generator_high_freq|pr_state.state9       ; regout           ;
-; |input_generator_high_freq|pr_state.state10      ; |input_generator_high_freq|pr_state.state10      ; regout           ;
-; |input_generator_high_freq|pr_state.state11      ; |input_generator_high_freq|pr_state.state11      ; regout           ;
-; |input_generator_high_freq|nx_state.state1_804   ; |input_generator_high_freq|nx_state.state1_804   ; out              ;
-; |input_generator_high_freq|process_2~1           ; |input_generator_high_freq|process_2~1           ; out0             ;
-; |input_generator_high_freq|process_2~2           ; |input_generator_high_freq|process_2~2           ; out0             ;
-; |input_generator_high_freq|nx_state.state2_792   ; |input_generator_high_freq|nx_state.state2_792   ; out              ;
-; |input_generator_high_freq|nx_state.state1~0     ; |input_generator_high_freq|nx_state.state1~0     ; out0             ;
-; |input_generator_high_freq|nx_state.state1~1     ; |input_generator_high_freq|nx_state.state1~1     ; out0             ;
-; |input_generator_high_freq|nx_state.state3_780   ; |input_generator_high_freq|nx_state.state3_780   ; out              ;
-; |input_generator_high_freq|nx_state.state4_768   ; |input_generator_high_freq|nx_state.state4_768   ; out              ;
-; |input_generator_high_freq|nx_state.state5_756   ; |input_generator_high_freq|nx_state.state5_756   ; out              ;
-; |input_generator_high_freq|nx_state.state6_744   ; |input_generator_high_freq|nx_state.state6_744   ; out              ;
-; |input_generator_high_freq|nx_state.state7_732   ; |input_generator_high_freq|nx_state.state7_732   ; out              ;
-; |input_generator_high_freq|nx_state.state8_720   ; |input_generator_high_freq|nx_state.state8_720   ; out              ;
-; |input_generator_high_freq|process_2~3           ; |input_generator_high_freq|process_2~3           ; out0             ;
-; |input_generator_high_freq|process_2~4           ; |input_generator_high_freq|process_2~4           ; out0             ;
-; |input_generator_high_freq|nx_state.state9_708   ; |input_generator_high_freq|nx_state.state9_708   ; out              ;
-; |input_generator_high_freq|nx_state.state10_696  ; |input_generator_high_freq|nx_state.state10_696  ; out              ;
-; |input_generator_high_freq|nx_state.state11_684  ; |input_generator_high_freq|nx_state.state11_684  ; out              ;
-; |input_generator_high_freq|nx_state.state12_672  ; |input_generator_high_freq|nx_state.state12_672  ; out              ;
-; |input_generator_high_freq|nx_state.state13_660  ; |input_generator_high_freq|nx_state.state13_660  ; out              ;
-; |input_generator_high_freq|nx_state.state14_648  ; |input_generator_high_freq|nx_state.state14_648  ; out              ;
-; |input_generator_high_freq|nx_state.state15_636  ; |input_generator_high_freq|nx_state.state15_636  ; out              ;
-; |input_generator_high_freq|process_2~5           ; |input_generator_high_freq|process_2~5           ; out0             ;
-; |input_generator_high_freq|process_2~6           ; |input_generator_high_freq|process_2~6           ; out0             ;
-; |input_generator_high_freq|process_2~7           ; |input_generator_high_freq|process_2~7           ; out0             ;
-; |input_generator_high_freq|process_2~8           ; |input_generator_high_freq|process_2~8           ; out0             ;
-; |input_generator_high_freq|WideOr0               ; |input_generator_high_freq|WideOr0               ; out0             ;
-; |input_generator_high_freq|WideOr1               ; |input_generator_high_freq|WideOr1               ; out0             ;
-; |input_generator_high_freq|WideOr2               ; |input_generator_high_freq|WideOr2               ; out0             ;
-; |input_generator_high_freq|WideOr3               ; |input_generator_high_freq|WideOr3               ; out0             ;
-; |input_generator_high_freq|pr_state.state15      ; |input_generator_high_freq|pr_state.state15      ; regout           ;
-; |input_generator_high_freq|pr_state.state14      ; |input_generator_high_freq|pr_state.state14      ; regout           ;
-; |input_generator_high_freq|nx_state.state1~2     ; |input_generator_high_freq|nx_state.state1~2     ; out0             ;
-; |input_generator_high_freq|S0~0                  ; |input_generator_high_freq|S0~0                  ; out              ;
-; |input_generator_high_freq|S0~1                  ; |input_generator_high_freq|S0~1                  ; out              ;
-; |input_generator_high_freq|S0~2                  ; |input_generator_high_freq|S0~2                  ; out              ;
-; |input_generator_high_freq|S0~3                  ; |input_generator_high_freq|S0~3                  ; out              ;
-; |input_generator_high_freq|S0~4                  ; |input_generator_high_freq|S0~4                  ; out              ;
-; |input_generator_high_freq|S1~0                  ; |input_generator_high_freq|S1~0                  ; out              ;
-; |input_generator_high_freq|S1~1                  ; |input_generator_high_freq|S1~1                  ; out              ;
-; |input_generator_high_freq|S1~2                  ; |input_generator_high_freq|S1~2                  ; out              ;
-; |input_generator_high_freq|S1~3                  ; |input_generator_high_freq|S1~3                  ; out              ;
-; |input_generator_high_freq|S1~4                  ; |input_generator_high_freq|S1~4                  ; out              ;
-; |input_generator_high_freq|S2~0                  ; |input_generator_high_freq|S2~0                  ; out              ;
-; |input_generator_high_freq|S2~1                  ; |input_generator_high_freq|S2~1                  ; out              ;
-; |input_generator_high_freq|S2~2                  ; |input_generator_high_freq|S2~2                  ; out              ;
-; |input_generator_high_freq|S2~3                  ; |input_generator_high_freq|S2~3                  ; out              ;
-; |input_generator_high_freq|S2~4                  ; |input_generator_high_freq|S2~4                  ; out              ;
-; |input_generator_high_freq|S3~0                  ; |input_generator_high_freq|S3~0                  ; out              ;
-; |input_generator_high_freq|S3~1                  ; |input_generator_high_freq|S3~1                  ; out              ;
-; |input_generator_high_freq|S3~2                  ; |input_generator_high_freq|S3~2                  ; out              ;
-; |input_generator_high_freq|S3~3                  ; |input_generator_high_freq|S3~3                  ; out              ;
-; |input_generator_high_freq|S3~4                  ; |input_generator_high_freq|S3~4                  ; out              ;
-; |input_generator_high_freq|A0~0                  ; |input_generator_high_freq|A0~0                  ; out              ;
-; |input_generator_high_freq|A0~1                  ; |input_generator_high_freq|A0~1                  ; out              ;
-; |input_generator_high_freq|A0~2                  ; |input_generator_high_freq|A0~2                  ; out              ;
-; |input_generator_high_freq|A1~0                  ; |input_generator_high_freq|A1~0                  ; out              ;
-; |input_generator_high_freq|A1~1                  ; |input_generator_high_freq|A1~1                  ; out              ;
-; |input_generator_high_freq|A1~2                  ; |input_generator_high_freq|A1~2                  ; out              ;
-; |input_generator_high_freq|A1~3                  ; |input_generator_high_freq|A1~3                  ; out              ;
-; |input_generator_high_freq|A2~0                  ; |input_generator_high_freq|A2~0                  ; out              ;
-; |input_generator_high_freq|A2~1                  ; |input_generator_high_freq|A2~1                  ; out              ;
-; |input_generator_high_freq|A3~0                  ; |input_generator_high_freq|A3~0                  ; out              ;
-; |input_generator_high_freq|B1~0                  ; |input_generator_high_freq|B1~0                  ; out              ;
-; |input_generator_high_freq|B1~1                  ; |input_generator_high_freq|B1~1                  ; out              ;
-; |input_generator_high_freq|B1~2                  ; |input_generator_high_freq|B1~2                  ; out              ;
-; |input_generator_high_freq|B1~3                  ; |input_generator_high_freq|B1~3                  ; out              ;
-; |input_generator_high_freq|B2~0                  ; |input_generator_high_freq|B2~0                  ; out              ;
-; |input_generator_high_freq|B2~1                  ; |input_generator_high_freq|B2~1                  ; out              ;
-; |input_generator_high_freq|B2~2                  ; |input_generator_high_freq|B2~2                  ; out              ;
-; |input_generator_high_freq|B3~0                  ; |input_generator_high_freq|B3~0                  ; out              ;
-; |input_generator_high_freq|B3~1                  ; |input_generator_high_freq|B3~1                  ; out              ;
-; |input_generator_high_freq|B3~2                  ; |input_generator_high_freq|B3~2                  ; out              ;
-; |input_generator_high_freq|pr_state.state13      ; |input_generator_high_freq|pr_state.state13      ; regout           ;
-; |input_generator_high_freq|nx_state.state0_816   ; |input_generator_high_freq|nx_state.state0_816   ; out              ;
-; |input_generator_high_freq|pr_state.state12      ; |input_generator_high_freq|pr_state.state12      ; regout           ;
-; |input_generator_high_freq|nx_state.state1~3     ; |input_generator_high_freq|nx_state.state1~3     ; out0             ;
-; |input_generator_high_freq|clk                   ; |input_generator_high_freq|clk                   ; out              ;
-; |input_generator_high_freq|code0                 ; |input_generator_high_freq|code0                 ; out              ;
-; |input_generator_high_freq|code1                 ; |input_generator_high_freq|code1                 ; out              ;
-; |input_generator_high_freq|code2                 ; |input_generator_high_freq|code2                 ; out              ;
-; |input_generator_high_freq|S0                    ; |input_generator_high_freq|S0                    ; pin_out          ;
-; |input_generator_high_freq|S1                    ; |input_generator_high_freq|S1                    ; pin_out          ;
-; |input_generator_high_freq|S2                    ; |input_generator_high_freq|S2                    ; pin_out          ;
-; |input_generator_high_freq|S3                    ; |input_generator_high_freq|S3                    ; pin_out          ;
-; |input_generator_high_freq|A0                    ; |input_generator_high_freq|A0                    ; pin_out          ;
-; |input_generator_high_freq|A1                    ; |input_generator_high_freq|A1                    ; pin_out          ;
-; |input_generator_high_freq|A2                    ; |input_generator_high_freq|A2                    ; pin_out          ;
-; |input_generator_high_freq|A3                    ; |input_generator_high_freq|A3                    ; pin_out          ;
-; |input_generator_high_freq|B0                    ; |input_generator_high_freq|B0                    ; pin_out          ;
-; |input_generator_high_freq|B1                    ; |input_generator_high_freq|B1                    ; pin_out          ;
-; |input_generator_high_freq|B2                    ; |input_generator_high_freq|B2                    ; pin_out          ;
-; |input_generator_high_freq|B3                    ; |input_generator_high_freq|B3                    ; pin_out          ;
-; |input_generator_high_freq|pr_state~0            ; |input_generator_high_freq|pr_state~0            ; out0             ;
-; |input_generator_high_freq|pr_state.state0~0     ; |input_generator_high_freq|pr_state.state0~0     ; out0             ;
-; |input_generator_high_freq|WideOr0~0             ; |input_generator_high_freq|WideOr0~0             ; out0             ;
-; |input_generator_high_freq|pr_state.state1~0     ; |input_generator_high_freq|pr_state.state1~0     ; out0             ;
-; |input_generator_high_freq|WideOr1~0             ; |input_generator_high_freq|WideOr1~0             ; out0             ;
-; |input_generator_high_freq|pr_state.state2~0     ; |input_generator_high_freq|pr_state.state2~0     ; out0             ;
-; |input_generator_high_freq|WideOr0~1             ; |input_generator_high_freq|WideOr0~1             ; out0             ;
-; |input_generator_high_freq|pr_state.state3~0     ; |input_generator_high_freq|pr_state.state3~0     ; out0             ;
-; |input_generator_high_freq|WideOr2~0             ; |input_generator_high_freq|WideOr2~0             ; out0             ;
-; |input_generator_high_freq|pr_state.state4~0     ; |input_generator_high_freq|pr_state.state4~0     ; out0             ;
-; |input_generator_high_freq|WideOr0~2             ; |input_generator_high_freq|WideOr0~2             ; out0             ;
-; |input_generator_high_freq|pr_state.state5~0     ; |input_generator_high_freq|pr_state.state5~0     ; out0             ;
-; |input_generator_high_freq|WideOr1~1             ; |input_generator_high_freq|WideOr1~1             ; out0             ;
-; |input_generator_high_freq|pr_state.state6~0     ; |input_generator_high_freq|pr_state.state6~0     ; out0             ;
-; |input_generator_high_freq|WideOr0~3             ; |input_generator_high_freq|WideOr0~3             ; out0             ;
-; |input_generator_high_freq|pr_state.state7~0     ; |input_generator_high_freq|pr_state.state7~0     ; out0             ;
-; |input_generator_high_freq|WideOr3~0             ; |input_generator_high_freq|WideOr3~0             ; out0             ;
-; |input_generator_high_freq|pr_state.state8~0     ; |input_generator_high_freq|pr_state.state8~0     ; out0             ;
-; |input_generator_high_freq|WideOr0~4             ; |input_generator_high_freq|WideOr0~4             ; out0             ;
-; |input_generator_high_freq|pr_state.state9~0     ; |input_generator_high_freq|pr_state.state9~0     ; out0             ;
-; |input_generator_high_freq|WideOr1~2             ; |input_generator_high_freq|WideOr1~2             ; out0             ;
-; |input_generator_high_freq|pr_state.state10~0    ; |input_generator_high_freq|pr_state.state10~0    ; out0             ;
-; |input_generator_high_freq|WideOr0~5             ; |input_generator_high_freq|WideOr0~5             ; out0             ;
-; |input_generator_high_freq|pr_state.state11~0    ; |input_generator_high_freq|pr_state.state11~0    ; out0             ;
-; |input_generator_high_freq|WideOr2~1             ; |input_generator_high_freq|WideOr2~1             ; out0             ;
-; |input_generator_high_freq|pr_state.state12~0    ; |input_generator_high_freq|pr_state.state12~0    ; out0             ;
-; |input_generator_high_freq|WideOr0~6             ; |input_generator_high_freq|WideOr0~6             ; out0             ;
-; |input_generator_high_freq|pr_state.state13~0    ; |input_generator_high_freq|pr_state.state13~0    ; out0             ;
-; |input_generator_high_freq|WideOr1~3             ; |input_generator_high_freq|WideOr1~3             ; out0             ;
-; |input_generator_high_freq|pr_state.state14~0    ; |input_generator_high_freq|pr_state.state14~0    ; out0             ;
-; |input_generator_high_freq|WideOr0~7             ; |input_generator_high_freq|WideOr0~7             ; out0             ;
-; |input_generator_high_freq|pr_state.state15~0    ; |input_generator_high_freq|pr_state.state15~0    ; out0             ;
-; |input_generator_high_freq|nx_state.state0_816~0 ; |input_generator_high_freq|nx_state.state0_816~0 ; out0             ;
-; |input_generator_high_freq|pr_state~4            ; |input_generator_high_freq|pr_state~4            ; out0             ;
-; |input_generator_high_freq|Add0~0                ; |input_generator_high_freq|Add0~0                ; out0             ;
-; |input_generator_high_freq|Add0~1                ; |input_generator_high_freq|Add0~1                ; out0             ;
-; |input_generator_high_freq|Add0~2                ; |input_generator_high_freq|Add0~2                ; out0             ;
-; |input_generator_high_freq|Equal0~0              ; |input_generator_high_freq|Equal0~0              ; out0             ;
-+--------------------------------------------------+--------------------------------------------------+------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                 ;
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+------------------+
+; Node Name                                                                         ; Output Port Name                                                                  ; Output Port Type ;
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+------------------+
+; |Lab3_top|A0                                                                      ; |Lab3_top|A0                                                                      ; pin_out          ;
+; |Lab3_top|A1                                                                      ; |Lab3_top|A1                                                                      ; pin_out          ;
+; |Lab3_top|A2                                                                      ; |Lab3_top|A2                                                                      ; pin_out          ;
+; |Lab3_top|A3                                                                      ; |Lab3_top|A3                                                                      ; pin_out          ;
+; |Lab3_top|B0                                                                      ; |Lab3_top|B0                                                                      ; pin_out          ;
+; |Lab3_top|B1                                                                      ; |Lab3_top|B1                                                                      ; pin_out          ;
+; |Lab3_top|B2                                                                      ; |Lab3_top|B2                                                                      ; pin_out          ;
+; |Lab3_top|B3                                                                      ; |Lab3_top|B3                                                                      ; pin_out          ;
+; |Lab3_top|CLRN                                                                    ; |Lab3_top|CLRN                                                                    ; out              ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst3|74151:inst|f74151:sub|77  ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst3|74151:inst|f74151:sub|77  ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst3|74151:inst|f74151:sub|69  ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst3|74151:inst|f74151:sub|69  ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst3|74151:inst|f74151:sub|70  ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst3|74151:inst|f74151:sub|70  ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|inst6                     ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|inst6                     ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|inst8                     ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|inst8                     ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|inst7                     ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|inst7                     ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|inst5                     ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|inst5                     ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|74151:inst|f74151:sub|68  ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|74151:inst|f74151:sub|68  ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|74151:inst|f74151:sub|73  ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|74151:inst|f74151:sub|73  ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|74151:inst|f74151:sub|69  ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|74151:inst|f74151:sub|69  ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|74151:inst|f74151:sub|63  ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|74151:inst|f74151:sub|63  ; out0             ;
+; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|74151:inst|f74151:sub|64  ; |Lab3_top|logiccircuit4bit:inst1|logiccircuit1bit:inst2|74151:inst|f74151:sub|64  ; out0             ;
+; |Lab3_top|register4bit:inst7|inst                                                 ; |Lab3_top|register4bit:inst7|inst                                                 ; regout           ;
+; |Lab3_top|register4bit:inst7|inst2                                                ; |Lab3_top|register4bit:inst7|inst2                                                ; regout           ;
+; |Lab3_top|register4bit:inst7|inst3                                                ; |Lab3_top|register4bit:inst7|inst3                                                ; regout           ;
+; |Lab3_top|register4bit:inst6|inst1                                                ; |Lab3_top|register4bit:inst6|inst1                                                ; regout           ;
+; |Lab3_top|register4bit:inst6|inst                                                 ; |Lab3_top|register4bit:inst6|inst                                                 ; regout           ;
+; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst5|74153:inst|4              ; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst5|74153:inst|4              ; out0             ;
+; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst4|74153:inst|4              ; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst4|74153:inst|4              ; out0             ;
+; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst4|74153:inst|7              ; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst4|74153:inst|7              ; out0             ;
+; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst3|74153:inst|7              ; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst3|74153:inst|7              ; out0             ;
+; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst3|fulladder1bit:inst2|inst2 ; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst3|fulladder1bit:inst2|inst2 ; out0             ;
+; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst|74153:inst|7               ; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst|74153:inst|7               ; out0             ;
+; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst|fulladder1bit:inst2|inst2  ; |Lab3_top|arithcircuit4bit:inst9|arithcircuit1bit:inst|fulladder1bit:inst2|inst2  ; out0             ;
+; |Lab3_top|state4bit:inst11|inst8                                                  ; |Lab3_top|state4bit:inst11|inst8                                                  ; out0             ;
+; |Lab3_top|state4bit:inst11|inst6                                                  ; |Lab3_top|state4bit:inst11|inst6                                                  ; out0             ;
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+------------------+
 
 
 +---------------------+
@@ -441,21 +377,22 @@ The following table displays output ports that do not toggle to 0 during simulat
 ; Simulator Messages ;
 +--------------------+
 Info: *******************************************************************
-Info: Running Quartus II 32-bit Simulator
+Info: Running Quartus II 64-Bit Simulator
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Oct 15 22:25:40 2026
+    Info: Processing started: Sat Oct 17 20:47:39 2026
 Info: Command: quartus_sim --simulation_results_format=VWF Temp3 -c Temp3_qsim
-Info (324025): Using vector source file "C:/SEG_2136/TempLab3/Waveform.vwf"
+Info (324025): Using vector source file "C:/CEG/2136_A/TempLab3/Waveform.vwf"
+Warning (328012): Can't find signal in vector source file for input pin "|Lab3_top|CLRN"
 Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info (310002): Simulation partitioned into 1 sub-simulations
-Info (328053): Simulation coverage is       0.00 %
-Info (328052): Number of transitions in simulation is 0
+Info (328053): Simulation coverage is      83.25 %
+Info (328052): Number of transitions in simulation is 3573
 Info (324045): Vector file Temp3_qsim.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
-Info: Quartus II 32-bit Simulator was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 266 megabytes
-    Info: Processing ended: Thu Oct 15 22:25:40 2026
-    Info: Elapsed time: 00:00:00
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 208 megabytes
+    Info: Processing ended: Sat Oct 17 20:47:40 2026
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 
 
